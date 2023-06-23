@@ -1,4 +1,4 @@
-#Lecture 0
+# Lecture 0
 
 1. Creating Code with Python
 2. Functions
@@ -20,7 +20,7 @@
 17. Returning Values
 18 Summing Up
 
-##Creating Code with Python
+## Creating Code with Python
 VS Code is a special type of text editor that is called a compiler. At the top, you’ll notice a text editor and, at the bottom you will see a terminal where you can execute commands.
 In the terminal, you can execute code hello.py to start coding.
 In the text editor above, you can type print("hello, world"). This is a famous canonical program that nearly all coders write during their learning process.
@@ -29,17 +29,17 @@ Recall, computers really only understand zeros and ones. Therefore, when you run
 The result of running the python hello.py program is hello, world.
 Congrats! You just created your first program.
 
-##Functions
+## Functions
 Functions are verbs or actions that the computer or computer language will already know how to perform.
 In your hello.py program, the print function knows how to print to the terminal window.
 The print function takes arguments. In this case, "hello, world" are the arguments that the print function takes.
 
-##Bugs
+## Bugs
 Bugs are a natural part of coding. These are mistakes, problems for you to solve! Don’t get discouraged! This is part of the process of becoming a great programmer.
 Imagine in our hello.py program that accidentally typed print("hello, world" notice that we missed the final ) required by the compiler. If I purposefully make this mistake, you’ll the compiler will output an error in the terminal window!
 Often, the error messages will inform you of your mistake and provide you clues on how to fix them. However, there will be many times that the compiler is not this kind.
 
-##Improving Your First Python Program
+## Improving Your First Python Program
 We can personalize your first Python program.
 In our text editor in hello.py we can add another function. input is a function that takes a prompt as an argument. We can edit our code to say
 
@@ -47,7 +47,7 @@ In our text editor in hello.py we can add another function. input is a function 
 		print("hello, world")
 This edit alone, however, will not allow your program to output what your user inputs. For that, we will need to introduce you to variables
 
-##Variables
+## Variables
 A variable is just a container for a value within your own program.
 In your program, you can introduce your own variable in your program by editing it to read
 		name = input("What's your name? ")
@@ -73,7 +73,7 @@ We are getting closer to the result we might intend!
 
 You can learn more in Python’s documentation on data types.
 
-##Comments
+## Comments
 Comments are a way for programmers to track what they are doing in their programs and even inform others about their intentions for a block of code. In short, they are notes for yourself and others that will see your code!
 You can add comments to your program to be able to see what it is that your program is doing. You might edit your code as follows:
 
@@ -393,36 +393,36 @@ This alone, however, will create an error of sorts. If we run python hello.py no
 
 The following very small modification will call the main function and restore our program to working order:
 
-def main():
+		def main():
 
-    # Output using our own function
-    name = input("What's your name? ")
-    hello(name)
+			# Output using our own function
+			name = input("What's your name? ")
+			hello(name)
 
-    # Output without passing the expected arguments
-    hello()
-
-
-# Create our own function
-def hello(to="world"):
-    print("hello,", to)
+			# Output without passing the expected arguments
+			hello()
 
 
-main()
+		# Create our own function
+		def hello(to="world"):
+			print("hello,", to)
+
+
+		main()
 Returning Values
 You can imagine many scenarios where you don’t just want a function to perform an action, but also to return a value back to the main function. For example, rather than simply printing the calculation of x + y, you may want a function to return the value of this calculation back to another part of your program. This “passing back” of a value we call a return value.
 Returning to our calculator.py code by typing code calculator.py. Erase all code there. Rework the code as follows:
 
-def main():
-    x = int(input("What's x? "))
-    print("x squared is", square(x))
+		def main():
+			x = int(input("What's x? "))
+			print("x squared is", square(x))
 
 
-def square(n):
-    return n * n
+		def square(n):
+			return n * n
 
 
-main()
+		main()
 Effectively, x is passed to square. Then, the calculation of x * x is returned back to the main function.
 
 Summing Up

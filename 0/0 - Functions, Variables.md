@@ -4,7 +4,6 @@
 
 Watch the [Functions, Variables](https://schoolsnsw.sharepoint.com/:v:/s/2025-SoftwareEngineering/EUx0KRRHe65Jj0jS1aqYiwcBNfF4TmbZdfwV92WcLE2uwQ?e=2PQ7fZ) video.
 
-
 ---
 
 1. Creating Code with Python

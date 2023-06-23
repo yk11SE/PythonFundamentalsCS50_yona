@@ -1,4 +1,5 @@
 # Lecture 0
+## [Functions, Variables Video](https://schoolsnsw.sharepoint.com/:v:/s/2025-SoftwareEngineering/EUx0KRRHe65Jj0jS1aqYiwcBNfF4TmbZdfwV92WcLE2uwQ?e=2PQ7fZ).
 
 1. Creating Code with Python
 2. Functions
@@ -22,26 +23,26 @@
 
 ## Creating Code with Python
 VS Code is a special type of text editor that is called a compiler. At the top, you’ll notice a text editor and, at the bottom you will see a terminal where you can execute commands.
-In the terminal, you can execute code hello.py to start coding.
+In the terminal, you can execute `code hello.py` to start coding.
 In the text editor above, you can type print("hello, world"). This is a famous canonical program that nearly all coders write during their learning process.
-In the terminal window, you can execute commands. To run this program, you are going to need to move your cursor to the bottom of the screen, clicking in the terminal window. You can now type a second command in the terminal window. Next to the dollar sign, type python hello.py and press the enter key on your keyboard.
-Recall, computers really only understand zeros and ones. Therefore, when you run python hello.py, python will interpret the text that you created in hello.py and translate it into the zeros and ones that the computer can understand.
-The result of running the python hello.py program is hello, world.
+In the terminal window, you can execute commands. To run this program, you are going to need to move your cursor to the bottom of the screen, clicking in the terminal window. You can now type a second command in the terminal window. Next to the dollar sign, type `python hello.py` and press the enter key on your keyboard.
+Recall, computers really only understand zeros and ones. Therefore, when you run `python hello.py`, python will interpret the text that you created in `hello.py` and translate it into the zeros and ones that the computer can understand.
+The result of running the `python hello.py` program is hello, world.
 Congrats! You just created your first program.
 
 ## Functions
 Functions are verbs or actions that the computer or computer language will already know how to perform.
-In your hello.py program, the print function knows how to print to the terminal window.
+In your `hello.py` program, the print function knows how to print to the terminal window.
 The print function takes arguments. In this case, "hello, world" are the arguments that the print function takes.
 
 ## Bugs
 Bugs are a natural part of coding. These are mistakes, problems for you to solve! Don’t get discouraged! This is part of the process of becoming a great programmer.
-Imagine in our hello.py program that accidentally typed print("hello, world" notice that we missed the final ) required by the compiler. If I purposefully make this mistake, you’ll the compiler will output an error in the terminal window!
+Imagine in our `hello.py` program that accidentally typed print("hello, world" notice that we missed the final ) required by the compiler. If I purposefully make this mistake, you’ll the compiler will output an error in the terminal window!
 Often, the error messages will inform you of your mistake and provide you clues on how to fix them. However, there will be many times that the compiler is not this kind.
 
 ## Improving Your First Python Program
 We can personalize your first Python program.
-In our text editor in hello.py we can add another function. input is a function that takes a prompt as an argument. We can edit our code to say
+In our text editor in `hello.py` we can add another function. input is a function that takes a prompt as an argument. We can edit our code to say
 
 		input("What's your name? ")
 		print("hello, world")
@@ -199,7 +200,7 @@ Integers or int
 In Python, an integer is referred to as an int.
 In the world of mathematics, we are familiar with +, -, *, /, and % operators. That last operator % or modulo operator may not be very familiar to you.
 You don’t have to use the text editor window in your compiler to run Python code. Down in your terminal, you can run python alone. You will be presented with >>> in the terminal window. You can then run live, interactive code. You could type 1+1 and it will run that calculation. This mode will not commonly be used during this course.
-Opening up VS Code again, we can type code calculator.py in the terminal. This will create a new file in which we will create our own calculator.
+Opening up VS Code again, we can type `code calculator.py` in the terminal. This will create a new file in which we will create our own calculator.
 First, we can declare a few variables.
 
 		x = 1
@@ -208,7 +209,7 @@ First, we can declare a few variables.
 		z = x + y
 
 		print(z)
-Naturally, when we run python calculator.py we get the result in the terminal window of 3. We can make this more interactive using the input function.
+Naturally, when we run `python calculator.py` we get the result in the terminal window of 3. We can make this more interactive using the input function.
 
 		x = input("What's x? ")
 		y = input("What's y? ")
@@ -319,7 +320,7 @@ You can learn more in Python’s documentation of float.
 
 Def
 Wouldn’t it be nice to create our own functions?
-Let’s bring back our final code of hello.py by typing code hello.py into the terminal window. Your starting code should look as follows:
+Let’s bring back our final code of `hello.py` by typing `code hello.py` into the terminal window. Your starting code should look as follows:
 
 # Ask the user for their name, remove whitespace from the str and capitalize the first letter of each word
 name = input("What's your name? ").strip().title()
@@ -344,7 +345,7 @@ We can create our own function called hello as follows:
 		name = input("What's your name? ")
 		hello()
 		print(name)
-Notice that everything under def hello() is indented. Python is an indented language. It uses indentation to understand what is part of the above function. Therefore, everything in the hello function must be indented. When something is not indented, it treats it as if it is not inside the hello function. Running python hello.py in the terminal window, you’ll see that your output is not exactly as you may want.
+Notice that everything under def hello() is indented. Python is an indented language. It uses indentation to understand what is part of the above function. Therefore, everything in the hello function must be indented. When something is not indented, it treats it as if it is not inside the hello function. Running `python hello.py` in the terminal window, you’ll see that your output is not exactly as you may want.
 
 We can further improve our code:
 
@@ -357,7 +358,7 @@ We can further improve our code:
 # Output using our own function
 		name = input("What's your name? ")
 		hello(name)
-Here, in the first lines, you are creating your hello function. This time, however, you are telling the compiler that this function takes a single parameter: a variable called to. Therefore, when you call hello(name) the computer passes name into the hello function as to. This is how we pass values into functions. Very useful! Running python hello.py in the terminal window, you’ll see that the output is much closer to our ideal presented earlier in this lecture.
+Here, in the first lines, you are creating your hello function. This time, however, you are telling the compiler that this function takes a single parameter: a variable called to. Therefore, when you call hello(name) the computer passes name into the hello function as to. This is how we pass values into functions. Very useful! Running `python hello.py` in the terminal window, you’ll see that the output is much closer to our ideal presented earlier in this lecture.
 
 We can change our code to add a default value to hello:
 
@@ -389,7 +390,7 @@ We don’t have to have our function at the start of our program. We can move it
 # Create our own function
 		def hello(to="world"):
 			print("hello,", to)
-This alone, however, will create an error of sorts. If we run python hello.py nothing happens! The reason for this is that nothing in this code is actually calling the main function and bringing our program to life.
+This alone, however, will create an error of sorts. If we run `python hello.py` nothing happens! The reason for this is that nothing in this code is actually calling the main function and bringing our program to life.
 
 The following very small modification will call the main function and restore our program to working order:
 
@@ -411,7 +412,7 @@ The following very small modification will call the main function and restore ou
 		main()
 Returning Values
 You can imagine many scenarios where you don’t just want a function to perform an action, but also to return a value back to the main function. For example, rather than simply printing the calculation of x + y, you may want a function to return the value of this calculation back to another part of your program. This “passing back” of a value we call a return value.
-Returning to our calculator.py code by typing code calculator.py. Erase all code there. Rework the code as follows:
+Returning to our `calculator.py` code by typing `code calculator.py`. Erase all code there. Rework the code as follows:
 
 		def main():
 			x = int(input("What's x? "))

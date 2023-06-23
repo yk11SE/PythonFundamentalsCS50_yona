@@ -6,9 +6,10 @@ Best to use your “indoor voice” sometimes, writing entirely in lowercase.
 In a file called `indoor.py`, implement a program in Python that prompts the user for input and then outputs that same input in lowercase. Punctuation and whitespace should be outputted unchanged. You’re welcome, but not required, to prompt the user explicitly, as by passing a str of your own as an argument to input.
 
 Hints
-Recall that input returns a str, per docs.python.org/3/library/functions.html#input.
-Recall that a str comes with quite a few methods, per docs.python.org/3/library/stdtypes.html#string-methods.
-Before You Begin
+- Recall that input returns a str, per docs.python.org/3/library/functions.html#input.
+- Recall that a str comes with quite a few methods, per docs.python.org/3/library/stdtypes.html#string-methods.
+
+## Before You Begin
 Execute `cd` by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
 
 		$
@@ -35,8 +36,8 @@ Run your program with `python indoor.py`. Type `50` and press Enter. Your progra
 # Commit your progran to GITHUB
 At the `indoor/ $` prompt in your terminal:
 
-		# Commit all changes in the REPO
-		git commit -m “[descriptive message]
+Commit all changes in the REPO
+		git commit -m “[descriptive message]“
 
-		# Push all changes to the REPO
+Push all changes to the REPO
 		git push 

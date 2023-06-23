@@ -7,7 +7,7 @@ In a file called `einstein.py`, implement a program in Python that prompts the u
 Hints
 1. Recall that input returns a `str`, per <https://docs.python.org/3/library/functions.html#input>.
 2. Recall that int can convert a `str` to an `int`, per <https://docs.python.org/3/library/functions.html#int>.
-3. Recall that Python comes with several built-in functions, <https://per docs.python.org/3/library/functions.html>.
+3. Recall that Python comes with several built-in functions, per <https://docs.python.org/3/library/functions.html>.
 
 ## Before You Begin
 Execute `cd` by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
@@ -29,9 +29,9 @@ to make a file called einstein.py where you’ll write your program.
 # How to Test
 Here’s how to test your code manually. At the `einstein/ $` prompt in your terminal: :
 
-1. Run your program with `python einstein.py`. Type `1` and press `Enter`. Your program should output: `90000000000000000`
-2. Run your program with `python einstein.py`. Type `14` and press `Enter`. Your program should output: `1260000000000000000`
-3. Run your program with `python einstein.py`. Type `50` and press `Enter`. Your program should output: `4500000000000000000`
+1. Run your program with `python einstein.py`. Type `1` and press Enter. Your program should output: `90000000000000000`
+2. Run your program with `python einstein.py`. Type `14` and press Enter. Your program should output: `1260000000000000000`
+3. Run your program with `python einstein.py`. Type `50` and press Enter. Your program should output: `4500000000000000000`
 
 # Commit your progran to GITHUB
 At the `einstein/ $` prompt in your terminal:

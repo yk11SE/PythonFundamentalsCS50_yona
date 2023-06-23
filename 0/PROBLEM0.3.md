@@ -4,7 +4,7 @@ Even if you haven’t studied physics (recently or ever!), you might have heard 
 
 In a file called `einstein.py`, implement a program in Python that prompts the user for mass as an integer (in kilograms) and then outputs the equivalent number of Joules as an integer. Assume that the user will input an integer.
 
-Hints
+## Hints
 1. Recall that input returns a `str`, per <https://docs.python.org/3/library/functions.html#input>.
 2. Recall that int can convert a `str` to an `int`, per <https://docs.python.org/3/library/functions.html#int>.
 3. Recall that Python comes with several built-in functions, per <https://docs.python.org/3/library/functions.html>.

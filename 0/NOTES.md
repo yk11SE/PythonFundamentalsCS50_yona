@@ -4,7 +4,6 @@
 
 Watch the [Functions, Variables](https://schoolsnsw.sharepoint.com/:v:/s/2025-SoftwareEngineering/EUx0KRRHe65Jj0jS1aqYiwcBNfF4TmbZdfwV92WcLE2uwQ?e=2PQ7fZ) video.
 
-<div style="max-width: 1280px"><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe src="https://schoolsnsw.sharepoint.com/sites/2025-SoftwareEngineering/_layouts/15/embed.aspx?UniqueId=1429744c-7b47-49ae-8f48-d2d5aa988b07&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="1280" height="720" frameborder="0" scrolling="no" allowfullscreen title="CS50P - Lecture 0 - Functions, Variables.mp4" style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe></div></div>
 
 ---
 

@@ -1,14 +1,13 @@
-# Indoor Voice
+# Einstein
 
-WRITING IN ALL CAPS IS LIKE YELLING.
+Even if you haven’t studied physics (recently or ever!), you might have heard that E = mc<sup>2</sup>, wherein E represents energy (measured in Joules), E represents mass (measured in kilograms), and represents the speed of light (measured approximately as 300000000 meters per second), per Albert Einstein et al. Essentially, the formula means that mass and energy are equivalent.
 
-Best to use your “indoor voice” sometimes, writing entirely in lowercase.
-
-In a file called `indoor.py`, implement a program in Python that prompts the user for input and then outputs that same input in lowercase. Punctuation and whitespace should be outputted unchanged. You’re welcome, but not required, to prompt the user explicitly, as by passing a str of your own as an argument to input.
+In a file called `einstein.py`, implement a program in Python that prompts the user for mass as an integer (in kilograms) and then outputs the equivalent number of Joules as an integer. Assume that the user will input an integer.
 
 Hints
-- Recall that input returns a str, per <https://docs.python.org/3/library/functions.html#input>.
-- Recall that a str comes with quite a few methods, per <https://docs.python.org/3/library/stdtypes.html#string-methods>.
+1. Recall that input returns a `str`, per <https://docs.python.org/3/library/functions.html#input>.
+2. Recall that int can convert a `str` to an `int`, per <https://docs.python.org/3/library/functions.html#int>.
+3. Recall that Python comes with several built-in functions, <https://per docs.python.org/3/library/functions.html>.
 
 ## Before You Begin
 Execute `cd` by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
@@ -16,26 +15,26 @@ Execute `cd` by itself in your terminal window. You should find that your termin
 		$
 Next execute
 
-		mkdir indoor
-to make a folder called indoor in your codespace.
+		mkdir einstein
+to make a folder called einstein in your codespace.
 
 Then execute
 
-		cd indoor
-to change directories into that folder. You should now see your terminal prompt as indoor/ $. You can now execute
+		cd einstein
+to change directories into that folder. You should now see your terminal prompt as einstein/ $. You can now execute
 
-		code indoor.py
-to make a file called indoor.py where you’ll write your program.
+		code einstein.py
+to make a file called einstein.py where you’ll write your program.
 
 # How to Test
-Here’s how to test your code manually. At the `indoor/ $` prompt in your terminal: :
+Here’s how to test your code manually. At the `einstein/ $` prompt in your terminal: :
 
-1. Run your program with `python indoor.py`. Type `HELLO` and press Enter. Your program should output `hello`.
-2. Run your program with `python indoor.py`. Type `THIS IS CS50` and press Enter. Your program should output `this is cs50`.
-3. Run your program with `python indoor.py`. Type `50` and press Enter. Your program should output `50`.
+1. Run your program with `python einstein.py`. Type `1` and press `Enter`. Your program should output: `90000000000000000`
+2. Run your program with `python einstein.py`. Type `14` and press `Enter`. Your program should output: `1260000000000000000`
+3. Run your program with `python einstein.py`. Type `50` and press `Enter`. Your program should output: `4500000000000000000`
 
 # Commit your progran to GITHUB
-At the `indoor/ $` prompt in your terminal:
+At the `einstein/ $` prompt in your terminal:
 
 		git commit -m “[descriptive message]“
 Commit all changes in the REPO

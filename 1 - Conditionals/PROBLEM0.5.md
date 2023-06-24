@@ -1,37 +1,27 @@
-# Tip Calculator
+# Meal Time
 
-In the United States, it’s customary to leave a tip for your server after dining in a restaurant, typically an amount equal to 15% or more of your meal’s cost. Not to worry, though, we’ve written a tip calculator for you, below!
+Suppose that you’re in a country where it’s customary to eat breakfast between 7:00 and 8:00, lunch between 12:00 and 13:00, and dinner between 18:00 and 19:00. Wouldn’t it be nice if you had a program that could tell you what to eat when?
+
+In `meal.py`, implement a program that prompts the user for a time and outputs whether it’s `breakfast time`, `lunch time`, or `dinner time`. If it’s not time for a meal, don’t output anything at all. Assume that the user’s input will be formatted in 24-hour time as `#:##` or `##:##`. And assume that each meal’s time range is inclusive. For instance, whether it’s 7:00, 7:01, 7:59, or 8:00, or anytime in between, it’s time for breakfast.
+
+Structure your program per the below, wherein `convert` is a function (that can be called by `main`) that converts `time`, a `str` in 24-hour format, to the corresponding number of hours as a `float`. For instance, given a `time` like `"7:30"` (i.e., 7 hours and 30 minutes), `convert` should return `7.5` (i.e., 7.5 hours).
 
 		def main():
-			dollars = dollars_to_float(input("How much was the meal? "))
-			percent = percent_to_float(input("What percentage would you like to tip? "))
-			tip = dollars * percent
-			print(f"Leave ${tip:.2f}")
+			...
 
 
-		def dollars_to_float(d):
-			# TODO
+		def convert(time):
+			...
 
 
-		def percent_to_float(p):
-			# TODO
-
-
+		if __name__ == "__main__":
 		main()
+Hints
+- Recall that a `str` comes with quite a few methods, per <https://docs.python.org/3/library/stdtypes.html#string-methods>, including `split`, which separates a `str` into a sequence of values, all of which can be assigned to variables at once. For instance, if `time` is a `str` like `"7:30"`, then
+		hours, minutes = time.split(":")
+will assign `"7"` to `hours` and `"30"` to `minutes`.
 
-Well, we’ve written most of a tip calculator for you. Unfortunately, we didn’t have time to implement two functions:
-
-- `dollars_to_float`, which should accept a `str` as input (formatted as `$##.##`, wherein each `#` is a decimal digit), remove the leading `$`, and return the amount as a `float`. For instance, given `$50.00` as input, it should return `50.0`.
-- `percent_to_float`, which should accept a `str` as input (formatted as `##%`, wherein each `#` is a decimal digit), remove the trailing `%`, and return the percentage as a `float`. For instance, given `15%` as input, it should return `0.15`.
-
-Assume that the user will input values in the expected formats.
-
-## Hints
-
-- Recall that `input` returns a `str`, per <https://docs.python.org/3/library/functions.html#input>.
-- Recall that `float` can convert a `str` to a `float`, per <https://docs.python.org/3/library/functions.html#float>.
-- Recall that a `str` comes with quite a few methods, per <https://docs.python.org/3/library/stdtypes.html#string-methods>.
-Demo
+- Keep in mind that there are 60 minutes in 1 hour.
 
 ## Before You Begin
 Execute `cd` by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
@@ -39,32 +29,35 @@ Execute `cd` by itself in your terminal window. You should find that your termin
 		$
 Next execute
 
-		mkdir tip
-to make a folder called tip in your codespace.
+		mkdir meal
+to make a folder called meal in your codespace.
 
 Then execute
 
-		cd tip
-to change directories into that folder. You should now see your terminal prompt as tip/ $. You can now execute
+		cd meal
+to change directories into that folder. You should now see your terminal prompt as meal/ $. You can now execute
 
-		code tip.py
-to make a file called tip.py where you’ll write your program.
+		code meal.py
+to make a file called meal.py where you’ll write your program.
 
 # How to Test
-Here’s how to test your code manually. At the `tip/ $` prompt in your terminal: :
+Here’s how to test your code manually. At the `meal/ $` prompt in your terminal: :
 
-1. Run your program with `python tip.py`. Type `$50.00` and press Enter. Then, type `15%` and press Enter. Your program should output: `Leave $7.50`  
-2. Run your program with `python tip.py`. Type `$100.00` and press Enter. Then, type `18%` and press Enter. Your program should output: `Leave $18.00`
-3. Run your program with `python tip.py`. Type `$15.00` and press Enter. Then, type `25%` and press Enter. Your program should output: `Leave $3.75`
+1. Run your program with `python meal.py`. Type `7:00` and press Enter. Your program should output: `breakfast time` 
+2. Run your program with `python meal.py`. Type `7:30` and press Enter. Your program should output: `breakfast time`
+3. Run your program with `python meal.py`. Type `12:42` and press Enter. Your program should output `lunch time`
+4. Run your program with `python meal.py`. Type `18:32` and press Enter. Your program should output `dinner time`
+5. Run your program with `python meal.py`. Type `11:11` and press Enter. Your program should output `nothing`
+
 
 # Commit your progran to GITHUB
-At the `tip/ $` prompt in your terminal:
+At the `meal/ $` prompt in your terminal:
 
-		git add tip.py
-Add tip.py to the changes to be committed
+		git add meal.py
+Add meal.py to the changes to be committed
 
-		git commit -m “Upload completed tip.py“
-Commit all changes in the REPO with the comment “Upload completed tip.py“
+		git commit -m “Upload completed meal.py“
+Commit all changes in the REPO with the comment “Upload completed meal.py“
 *note: If the file is not complete, adjust the comment to describes what is being commited*
 
 		git push 

@@ -10,11 +10,13 @@ Watch the [Debug](https://schoolsnsw.sharepoint.com/:v:/s/2025-SoftwareEngineeri
 2. `python hello.py` execute the python program
 
 # To commit and push code changes (basic GIT commands)
-1. Add indoor.py to the changes to be committed
+1. Pull latest code from the repository
+		git pull
+2. Add indoor.py to the changes to be committed
 		git add [file name]
-2. Commit all changes in the REPO with comments
+3. Commit all changes in the REPO with comments
 		git commit -m “My comment“
-3. Push all changes to the REPO
+4. Push all changes to the REPO
 		git push 
 
 # How to setup your own codespace

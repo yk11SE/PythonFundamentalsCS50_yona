@@ -1,15 +1,24 @@
-# Making Faces
+# File Extensions
 
-Before there were emoji, there were emoticons, whereby text like `:)` was a happy face and text like `:(` was a sad face. Nowadays, programs tend to convert emoticons to emoji automatically!
+Even though Windows and macOS sometimes hide them, most files have file extensions, a suffix that starts with a period (`.`) at the end of their name. For instance, file names for GIFs end with `.gif`, and file names for JPEGs end with `.jpg` or `.jpeg`. When you double-click on a file to open it, your computer uses its file extension to determine which program to launch.
 
-In a file called `faces.py`, implement a function called `convert` that accepts a `str` as input and returns that same input with any `:)` converted to 🙂 (otherwise known as a slightly smiling face) and any `:(` converted to 🙁 (otherwise known as a slightly frowning face). All other text should be returned unchanged.
+Web browsers, by contrast, rely on media types, formerly known as MIME types, to determine how to display files that live on the web. When you download a file from a web server, that server sends an HTTP header, along with the file itself, indicating the file’s media type. For instance, the media type for a GIF is `image/gif`, and the media type for a JPEG is `image/jpeg`. To determine the media type for a file, a web server typically looks at the file’s extension, mapping one to the other.
 
-Then, in that same file, implement a function called `main` that prompts the user for input, calls `convert` on that input, and prints the result. You’re welcome, but not required, to prompt the user explicitly, as by passing a `str` of your own as an argument to `input`. Be sure to call `main` at the bottom of your file.
+See developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types for common types.
+
+In a file called `extensions.py`, implement a program that prompts the user for the name of a file and then outputs that file’s media type if the file’s name ends, case-insensitively, in any of these suffixes:
+
+`.gif`
+`.jpg`
+`.jpeg`
+`.png`
+`.pdf`
+`.txt`
+`.zip`
+If the file’s name ends with some other suffix or has no suffix at all, output `application/octet-stream` instead, which is a common default.
 
 ## Hints
-- Recall that `input` returns a `str`, <https://per docs.python.org/3/library/functions.html#input>.
 - Recall that a `str` comes with quite a few methods, per <https://docs.python.org/3/library/stdtypes.html#string-methods>.
-- An emoji is actually just a character, so you can quote it like any `str`, a la `"😐"`. And you can copy and paste the emoji from this page into your own code as needed.
 
 ## Before You Begin
 Execute `cd` by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
@@ -17,32 +26,33 @@ Execute `cd` by itself in your terminal window. You should find that your termin
 		$
 Next execute
 
-		mkdir faces
-to make a folder called faces in your codespace.
+		mkdir extensions
+to make a folder called extensions in your codespace.
 
 Then execute
 
-		cd faces
-to change directories into that folder. You should now see your terminal prompt as faces/ $. You can now execute
+		cd extensions
+to change directories into that folder. You should now see your terminal prompt as extensions/ $. You can now execute
 
-		code faces.py
-to make a file called faces.py where you’ll write your program.
+		code extensions.py
+to make a file called extensions.py where you’ll write your program.
 
 # How to Test
-Here’s how to test your code manually. At the `faces/ $` prompt in your terminal: :
+Here’s how to test your code manually:
 
-1. Run your program with python faces.py. Type Hello :) and press Enter. Your program should output: `Hello 🙂`
-2. Run your program with python faces.py. Type Goodbye :( and press Enter. Your program should output: `Goodbye 🙁`
-3. Run your program with python faces.py. Type Hello :) Goodbye :( and press Enter. Your program should output: `Hello 🙂 Goodbye 🙁`
+- Run your program with `python extensions.py`. Type `happy.jpg` and press Enter. Your program should output: `image/jpeg` 
+- Run your program with `python extensions.py`. Type `document.pdf` and press Enter. Your program should output: `application/pdf`
+
+Be sure to test each of the other file formats, vary the casing of your input, and “accidentally” add spaces on either side of your input before pressing enter. Your program should behave as expected, case- and space-insensitively.
 
 # Commit your progran to GITHUB
-At the `faces/ $` prompt in your terminal:
+At the `extensions/ $` prompt in your terminal:
 
-		git add faces.py
-Add faces.py to the changes to be committed
+		git add extensions.py
+Add extensions.py to the changes to be committed
 
-		git commit -m “Upload completed faces.py“
-Commit all changes in the REPO with the comment “Upload completed faces.py“
+		git commit -m “Upload completed extensions.py“
+Commit all changes in the REPO with the comment “Upload completed extensions.py“
 *note: If the file is not complete, adjust the comment to describes what is being commited*
 
 		git push 

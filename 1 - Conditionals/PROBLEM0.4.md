@@ -1,13 +1,21 @@
-# Einstein
+# Math Interpreter
 
-Even if you haven’t studied physics (recently or ever!), you might have heard that E = mc<sup>2</sup>, wherein E represents energy (measured in Joules), E represents mass (measured in kilograms), and represents the speed of light (measured approximately as 300000000 meters per second), per Albert Einstein et al. Essentially, the formula means that mass and energy are equivalent.
+Python already supports math, whereby you can write code to add, subtract, multiply, or divide values and even variables. But let’s write a program that enables users to do math, even without knowing Python.
 
-In a file called `einstein.py`, implement a program in Python that prompts the user for mass as an integer (in kilograms) and then outputs the equivalent number of Joules as an integer. Assume that the user will input an integer.
+In a file called `interpreter.py`, implement a program that prompts the user for an arithmetic expression and then calculates and outputs the result as a floating-point value formatted to one decimal place. Assume that the user’s input will be formatted as `x` `y` `z`, with one space between `x` and `y` and one space between `y` and `z`, wherein:
+
+`x` is an integer
+`y` is `+`, `-`, `*`, or `/`
+`z` is an integer
+For instance, if the user inputs `1 + 1`, your program should output `2.0`. Assume that, if `y` is `/`, then `z` will not be `0`.
+
+Note that, just as `python` itself is an interpreter for Python, so will your `interpreter.py` be an interpreter for math!
 
 ## Hints
-1. Recall that input returns a `str`, per <https://docs.python.org/3/library/functions.html#input>.
-2. Recall that int can convert a `str` to an `int`, per <https://docs.python.org/3/library/functions.html#int>.
-3. Recall that Python comes with several built-in functions, per <https://docs.python.org/3/library/functions.html>.
+Recall that a `str` comes with quite a few methods, per <https://docs.python.org/3/library/stdtypes.html#string-methods>, including `split`, which separates a `str` into a sequence of values, all of which can be assigned to variables at once. For instance, if `expression` is a `str` like `1 + 1`, then
+
+x, y, z = expression.split(" ")
+will assign `1` to `x`, `+` to `y`, and `1` to `z`.
 
 ## Before You Begin
 Execute `cd` by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
@@ -15,32 +23,33 @@ Execute `cd` by itself in your terminal window. You should find that your termin
 		$
 Next execute
 
-		mkdir einstein
-to make a folder called einstein in your codespace.
+		mkdir interpreter
+to make a folder called interpreter in your codespace.
 
 Then execute
 
-		cd einstein
-to change directories into that folder. You should now see your terminal prompt as einstein/ $. You can now execute
+		cd interpreter
+to change directories into that folder. You should now see your terminal prompt as interpreter/ $. You can now execute
 
-		code einstein.py
-to make a file called einstein.py where you’ll write your program.
+		code interpreter.py
+to make a file called interpreter.py where you’ll write your program.
 
 # How to Test
-Here’s how to test your code manually. At the `einstein/ $` prompt in your terminal: :
+Here’s how to test your code manually. At the `interpreter/ $` prompt in your terminal: :
 
-1. Run your program with `python einstein.py`. Type `1` and press Enter. Your program should output: `90000000000000000`
-2. Run your program with `python einstein.py`. Type `14` and press Enter. Your program should output: `1260000000000000000`
-3. Run your program with `python einstein.py`. Type `50` and press Enter. Your program should output: `4500000000000000000`
+1. Run your program with `python interpreter.py`. Type `1 + 1` and press Enter. Your program should output: `2.0`
+2. Run your program with `python interpreter.py`. Type `2 - 3` and press Enter. Your program should output: `-1.0`
+3. Run your program with `python interpreter.py`. Type `2 * 2` and press Enter. Your program should output `4.0`
+4. Run your program with `python interpreter.py`. Type `50 / 5` and press Enter. Your program should output `10.0`
 
 # Commit your progran to GITHUB
-At the `einstein/ $` prompt in your terminal:
+At the `interpreter/ $` prompt in your terminal:
 
-		git add einstein.py
-Add einstein.py to the changes to be committed
+		git add interpreter.py
+Add interpreter.py to the changes to be committed
 
-		git commit -m “Upload completed einstein.py“
-Commit all changes in the REPO with the comment “Upload completed einstein.py“
+		git commit -m “Upload completed interpreter.py“
+Commit all changes in the REPO with the comment “Upload completed interpreter.py“
 *note: If the file is not complete, adjust the comment to describes what is being commited*
 
 		git push 

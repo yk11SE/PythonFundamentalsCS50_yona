@@ -15,7 +15,7 @@ https://cs50.harvard.edu/python/2022/
 
 # How to setup your own codespace
 1. Fork this repository
-![](/images/fork.png "")
+![](https://raw.githubusercontent.com/TempeHS/PythonFundamentals/main/images/Fork.png "")
 2. Correctly name your new reposity
 !(images/fork2.png)
 3. Start your codespace

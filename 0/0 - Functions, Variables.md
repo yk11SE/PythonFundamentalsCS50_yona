@@ -1,10 +1,6 @@
 # Lecture 0 - Functions, Variables
 
----
-
 Watch the [Functions, Variables](https://schoolsnsw.sharepoint.com/:v:/s/2025-SoftwareEngineering/EUx0KRRHe65Jj0jS1aqYiwcBNfF4TmbZdfwV92WcLE2uwQ?e=2PQ7fZ) video.
-
----
 
 ## Problems
 1. Problem 0.1 - Indoor Voice
@@ -13,11 +9,9 @@ Watch the [Functions, Variables](https://schoolsnsw.sharepoint.com/:v:/s/2025-So
 4. Problem 0.4 - Einstein
 5. Problem 0.5 - Tip Calculator
 
----
-
 ## Notes
 1. Creating Code with Python
-2. Functions
+2. [Functions](#Functions)
 3. Bugs
 4. Improving Your First Python Program
 5. Variables

@@ -11,7 +11,7 @@ Watch the [Conditionals](https://schoolsnsw.sharepoint.com/:v:/s/2025-SoftwareEn
 
 ## Notes
 1. [Conditionals](Conditionals)
-2. [if Statements](if-Statements
+2. [if Statements](if-Statements)
 3. [Control Flow, elif, and else](Control-Flow,-elif,-and-else)
 4. [or](or)
 5. [and](and)
@@ -79,7 +79,7 @@ Notice how the use of `elif` allows the program to make less decisions. First, t
 
 Our code can be represented as follows:
 
-<img src="https://raw.githubusercontent.com/TempeHS/PythonFundamentals/3a565636a7eda036739c922e1da8a63d2cd836e7/1%20-%20Conditionals/images/flowchart2.svg" width="300" />
+<img src="https://raw.githubusercontent.com/TempeHS/PythonFundamentals/39991317460d01ca40d5b9f5c35cbfead84f9c7d/1%20-%20Conditionals/images/flowchart2.svg" width="300" />
 
 While your computer may not notice a difference speed-wise between our first program and this revised program, consider how an online server running billions or trillions of these types of calculations each day could definitely be impacted by such a small coding decision.
 There is one final improvement we can make to our program. Notice how logically `elif x == y` is not a necessary evaluation to run. After all, if logically x is not less than y AND x is not greater than y, x MUST equal y. Therefore, we don’t have to run elif `x == y`. We can create a “catch-all,” default outcome using an `else` statement. We can revise as follows:
@@ -97,7 +97,7 @@ Notice how the relative complexity of this program has decreased through our rev
 
 Our code can be represented as follows:
 
-<img src="https://raw.githubusercontent.com/TempeHS/PythonFundamentals/3a565636a7eda036739c922e1da8a63d2cd836e7/1%20-%20Conditionals/images/flowchart3.svg" width="300" />
+<img src="https://raw.githubusercontent.com/TempeHS/PythonFundamentals/39991317460d01ca40d5b9f5c35cbfead84f9c7d/1%20-%20Conditionals/images/flowchart3.svg" width="300" />
 
 ### or
 `or` allows your program to decide between one or more alternatives. For example, we could further edit our program as follows:
@@ -135,7 +135,7 @@ Notice that the `==` operator evaluates if what is on the left and right are equ
 
 Our code can be illustrated as follows:
 
-<img src="https://raw.githubusercontent.com/TempeHS/PythonFundamentals/3a565636a7eda036739c922e1da8a63d2cd836e7/1%20-%20Conditionals/images/flowchart4.svg" width="300" />
+<img src="https://raw.githubusercontent.com/TempeHS/PythonFundamentals/39991317460d01ca40d5b9f5c35cbfead84f9c7d/1%20-%20Conditionals/images/flowchart4.svg" width="300" />
 
 ### and
 Similar to `or`, `and` can be used within conditional statements.

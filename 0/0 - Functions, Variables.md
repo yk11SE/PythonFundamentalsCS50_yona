@@ -30,6 +30,8 @@ Watch the [Functions, Variables](https://schoolsnsw.sharepoint.com/:v:/s/2025-So
 17. [Returning Values](Returning-Values)
 18 [Summing Up](Summing-Up)
 
+---
+
 ### Creating Code with Python
 VS Code is a special type of text editor that is called a compiler. At the top, you’ll notice a text editor and, at the bottom you will see a terminal where you can execute commands.
 In the terminal, you can execute `code hello.py` to start coding.

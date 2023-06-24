@@ -3,11 +3,11 @@
 Watch the [Conditionals](https://schoolsnsw.sharepoint.com/:v:/s/2025-SoftwareEngineering/EUx0KRRHe65Jj0jS1aqYiwcBNfF4TmbZdfwV92WcLE2uwQ?e=GWwfJI) video.
 
 ## Problems
-1. [Problem 0.1 - Indoor Voice](https://github.com/TempeHS/PythonFundamentals/blob/main/0/PROBLEM0.1.md)
-2. [Problem 0.2 - ]()
-3. [Problem 0.3 - ]()
-4. [Problem 0.4 - ]()
-5. [Problem 0.5 - ]()
+1. [Problem 0.1 - Deep Thought](https://github.com/TempeHS/PythonFundamentals/blob/main/1%20-%20Conditionals/PROBLEM0.1.md)
+2. [Problem 0.2 - Home Federal Savings Bank](https://github.com/TempeHS/PythonFundamentals/blob/main/1%20-%20Conditionals/PROBLEM0.1.md)
+3. [Problem 0.3 - File Extensions](https://github.com/TempeHS/PythonFundamentals/blob/main/1%20-%20Conditionals/PROBLEM0.1.md)
+4. [Problem 0.4 - Math Interpreter](https://github.com/TempeHS/PythonFundamentals/blob/main/1%20-%20Conditionals/PROBLEM0.1.md)
+5. [Problem 0.5 - Meal Time](PROBLEM0.1.md)
 
 ## Notes
 1. [Conditionals](Conditionals)

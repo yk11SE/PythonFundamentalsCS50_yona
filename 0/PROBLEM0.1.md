@@ -26,17 +26,21 @@ to change directories into that folder. You should now see your terminal prompt 
 to make a file called playback.py where you’ll write your program.
 
 # How to Test
-Here’s how to test your code manually. At the `indoor/ $` prompt in your terminal: :
+Here’s how to test your code manually. At the `playback/ $` prompt in your terminal: :
 
 1. Run your program with `python playback.py`. Type `This is CS50` and press `Enter`. Your program should output: `This...is...CS50`    
 2. Run your program with `python playback.py`. Type `This is our week on functions` and press `Enter`. Your program should output: `This...is...our...week...on...functions`
 3. Run your program with `python playback.py`. Type `Let's implement a function called hello` and press Enter. Your program should output: `Let's...implement...a...function...called...hello`.
 
 # Commit your progran to GITHUB
-At the `indoor/ $` prompt in your terminal:
+At the `playback/ $` prompt in your terminal:
 
-		git commit -m “[descriptive message]“
-Commit all changes in the REPO
+		git add playback.py
+Add playback.py to the changes to be committed
+
+		git commit -m “Upload completed playback.py“
+Commit all changes in the REPO with the comment “Upload completed playback.py“
+*note: If the file is not complete, adjust the comment to describes what is being commited*
 
 		git push 
 Push all changes to the REPO

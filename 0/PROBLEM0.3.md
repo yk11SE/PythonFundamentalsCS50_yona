@@ -36,8 +36,12 @@ Here’s how to test your code manually. At the `einstein/ $` prompt in your ter
 # Commit your progran to GITHUB
 At the `einstein/ $` prompt in your terminal:
 
-		git commit -m “[descriptive message]“
-Commit all changes in the REPO
+		git add einstein.py
+Add einstein.py to the changes to be committed
+
+		git commit -m “Upload completed einstein.py“
+Commit all changes in the REPO with the comment “Upload completed einstein.py“
+*note: If the file is not complete, adjust the comment to describes what is being commited*
 
 		git push 
 Push all changes to the REPO

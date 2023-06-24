@@ -38,8 +38,12 @@ Here’s how to test your code manually. At the `faces/ $` prompt in your termin
 # Commit your progran to GITHUB
 At the `faces/ $` prompt in your terminal:
 
-		git commit -m “[descriptive message]“
-Commit all changes in the REPO
+		git add faces.py
+Add faces.py to the changes to be committed
+
+		git commit -m “Upload completed faces.py“
+Commit all changes in the REPO with the comment “Upload completed faces.py“
+*note: If the file is not complete, adjust the comment to describes what is being commited*
 
 		git push 
 Push all changes to the REPO

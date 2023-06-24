@@ -38,10 +38,11 @@ Here’s how to test your code manually. At the `indoor/ $` prompt in your termi
 At the `indoor/ $` prompt in your terminal:
 
 		git add indoor.py
-Add indoor.py to the chnages to be committed
+Add indoor.py to the changes to be committed
 
 		git commit -m “Upload completed indoor.py“
-Commit all changes in the REPO with comments, if the file is not complete you may want to adjust the comment
+Commit all changes in the REPO with the comment “Upload completed indoor.py“
+*note: If the file is not complete, adjust the comment to describes what is being commited*
 
 		git push 
 Push all changes to the REPO

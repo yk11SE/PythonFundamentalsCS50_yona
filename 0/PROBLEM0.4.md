@@ -60,8 +60,12 @@ Here’s how to test your code manually. At the `tip/ $` prompt in your terminal
 # Commit your progran to GITHUB
 At the `tip/ $` prompt in your terminal:
 
-		git commit -m “[descriptive message]“
-Commit all changes in the REPO
+		git add tip.py
+Add tip.py to the changes to be committed
+
+		git commit -m “Upload completed tip.py“
+Commit all changes in the REPO with the comment “Upload completed tip.py“
+*note: If the file is not complete, adjust the comment to describes what is being commited*
 
 		git push 
 Push all changes to the REPO

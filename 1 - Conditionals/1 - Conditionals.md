@@ -3,10 +3,10 @@
 Watch the [Conditionals](https://schoolsnsw.sharepoint.com/:v:/s/2025-SoftwareEngineering/EUx0KRRHe65Jj0jS1aqYiwcBNfF4TmbZdfwV92WcLE2uwQ?e=GWwfJI) video.
 
 ## Problems
-1. [Problem 0.1 - Deep Thought](https://github.com/TempeHS/PythonFundamentals/blob/main/1%20-%20Conditionals/PROBLEM0.1.md)
-2. [Problem 0.2 - Home Federal Savings Bank](https://github.com/TempeHS/PythonFundamentals/blob/main/1%20-%20Conditionals/PROBLEM0.1.md)
-3. [Problem 0.3 - File Extensions](https://github.com/TempeHS/PythonFundamentals/blob/main/1%20-%20Conditionals/PROBLEM0.1.md)
-4. [Problem 0.4 - Math Interpreter](https://github.com/TempeHS/PythonFundamentals/blob/main/1%20-%20Conditionals/PROBLEM0.1.md)
+1. [Problem 0.1 - Deep Thought](PROBLEM0.1.md)
+2. [Problem 0.2 - Home Federal Savings Bank](PROBLEM0.1.md)
+3. [Problem 0.3 - File Extensions](PROBLEM0.1.md)
+4. [Problem 0.4 - Math Interpreter](PROBLEM0.1.md)
 5. [Problem 0.5 - Meal Time](PROBLEM0.1.md)
 
 ## Notes
@@ -61,6 +61,8 @@ Further revise your code as follows:
 Notice how you are providing a series of `if` statements. First, the first `if` statement is evaluated. Then, the second `if` statement runs its evaluation. Finally, the last `if` statement runs its evaluation. This flow of decisions is called “control flow.”
 
 Our code can be represented as follows:
+
+<img src="images/flowchart1.svg" width="300" />
 
 <img src="https://raw.githubusercontent.com/TempeHS/PythonFundamentals/3a565636a7eda036739c922e1da8a63d2cd836e7/1%20-%20Conditionals/images/flowchart1.svg" width="300" />
 

@@ -3,11 +3,11 @@
 Watch the [Functions, Variables](https://schoolsnsw.sharepoint.com/:v:/s/2025-SoftwareEngineering/EUx0KRRHe65Jj0jS1aqYiwcBNfF4TmbZdfwV92WcLE2uwQ?e=2PQ7fZ) video.
 
 ## Problems
-1. [Problem 0.1 - Indoor Voice](https://github.com/TempeHS/PythonFundamentals/blob/main/0/PROBLEM0.1.md)
-2. [Problem 0.2 - Playback Speed](https://github.com/TempeHS/PythonFundamentals/blob/main/0/PROBLEM0.2.md)
-3. [Problem 0.3 - Making Faces](https://github.com/TempeHS/PythonFundamentals/blob/main/0/PROBLEM0.3.md)
-4. [Problem 0.4 - Einstein](https://github.com/TempeHS/PythonFundamentals/blob/main/0/PROBLEM0.4.md)
-5. [Problem 0.5 - Tip Calculator](https://github.com/TempeHS/PythonFundamentals/blob/main/0/PROBLEM0.5.md)
+1. [Problem 0.1 - Indoor Voice](PROBLEM0.1.md)
+2. [Problem 0.2 - Playback Speed](PROBLEM0.2.md)
+3. [Problem 0.3 - Making Faces](PROBLEM0.3.md)
+4. [Problem 0.4 - Einstein](PROBLEM0.4.md)
+5. [Problem 0.5 - Tip Calculator](PROBLEM0.5.md)
 
 ## Notes
 1. [Creating Code with Python](Creating-Code-with-Python)

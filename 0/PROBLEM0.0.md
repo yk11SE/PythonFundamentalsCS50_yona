@@ -37,8 +37,11 @@ Here’s how to test your code manually. At the `indoor/ $` prompt in your termi
 # Commit your progran to GITHUB
 At the `indoor/ $` prompt in your terminal:
 
-		git commit -m “[descriptive message]“
-Commit all changes in the REPO
+		git add indoor.py
+Add indoor.py to the chnages to be committed
+
+		git commit -m “Upload completed indoor.py“
+Commit all changes in the REPO with comments, if the file is not complete you may want to adjust the comment
 
 		git push 
 Push all changes to the REPO

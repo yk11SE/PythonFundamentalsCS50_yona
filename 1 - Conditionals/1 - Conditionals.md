@@ -141,8 +141,7 @@ Notice how the relative complexity of this program has decreased through our rev
 
 Our code can be represented as follows:
 
-![](https://raw.githubusercontent.com/TempeHS/PythonFundamentals/3a565636a7eda036739c922e1da8a63d2cd836e7/1%20-%20Conditionals/images/flowchart1.svg =500x "")
-
+<img src="https://raw.githubusercontent.com/TempeHS/PythonFundamentals/3a565636a7eda036739c922e1da8a63d2cd836e7/1%20-%20Conditionals/images/flowchart1.svg" width="400" />
 
 True
 False

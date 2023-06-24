@@ -1,15 +1,12 @@
-# Making Faces
+# Playback Speed
 
-Before there were emoji, there were emoticons, whereby text like `:)` was a happy face and text like `:(` was a sad face. Nowadays, programs tend to convert emoticons to emoji automatically!
+Some people have a habit of lecturing speaking rather quickly, and it’d be nice to slow them down, a la YouTube’s 0.75 playback speed, or even by having them pause between words.
 
-In a file called `faces.py`, implement a function called `convert` that accepts a `str` as input and returns that same input with any `:)` converted to 🙂 (otherwise known as a slightly smiling face) and any `:(` converted to 🙁 (otherwise known as a slightly frowning face). All other text should be returned unchanged.
-
-Then, in that same file, implement a function called `main` that prompts the user for input, calls `convert` on that input, and prints the result. You’re welcome, but not required, to prompt the user explicitly, as by passing a `str` of your own as an argument to `input`. Be sure to call `main` at the bottom of your file.
+In a file called playback.py, implement a program in Python that prompts the user for input and then outputs that same input, replacing each space with ... (i.e., three periods).
 
 ## Hints
-- Recall that `input` returns a `str`, <https://per docs.python.org/3/library/functions.html#input>.
-- Recall that a `str` comes with quite a few methods, per <https://docs.python.org/3/library/stdtypes.html#string-methods>.
-- An emoji is actually just a character, so you can quote it like any `str`, a la `"😐"`. And you can copy and paste the emoji from this page into your own code as needed.
+- Recall that input returns a str, per <https://docs.python.org/3/library/functions.html#input>.
+- Recall that a str comes with quite a few methods, per <https://docs.python.org/3/library/stdtypes.html#string-methods>.
 
 ## Before You Begin
 Execute `cd` by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
@@ -17,32 +14,32 @@ Execute `cd` by itself in your terminal window. You should find that your termin
 		$
 Next execute
 
-		mkdir faces
-to make a folder called faces in your codespace.
+		mkdir playback
+to make a folder called playback in your codespace.
 
 Then execute
 
-		cd faces
-to change directories into that folder. You should now see your terminal prompt as faces/ $. You can now execute
+		cd playback
+to change directories into that folder. You should now see your terminal prompt as playback/ $. You can now execute
 
-		code faces.py
-to make a file called faces.py where you’ll write your program.
+		code playback.py
+to make a file called playback.py where you’ll write your program.
 
 # How to Test
-Here’s how to test your code manually. At the `faces/ $` prompt in your terminal: :
+Here’s how to test your code manually. At the `playback/ $` prompt in your terminal: :
 
-1. Run your program with python faces.py. Type Hello :) and press Enter. Your program should output: `Hello 🙂`
-2. Run your program with python faces.py. Type Goodbye :( and press Enter. Your program should output: `Goodbye 🙁`
-3. Run your program with python faces.py. Type Hello :) Goodbye :( and press Enter. Your program should output: `Hello 🙂 Goodbye 🙁`
+1. Run your program with `python playback.py`. Type `This is CS50` and press `Enter`. Your program should output: `This...is...CS50`    
+2. Run your program with `python playback.py`. Type `This is our week on functions` and press `Enter`. Your program should output: `This...is...our...week...on...functions`
+3. Run your program with `python playback.py`. Type `Let's implement a function called hello` and press Enter. Your program should output: `Let's...implement...a...function...called...hello`.
 
 # Commit your progran to GITHUB
-At the `faces/ $` prompt in your terminal:
+At the `playback/ $` prompt in your terminal:
 
-		git add faces.py
-Add faces.py to the changes to be committed
+		git add playback.py
+Add playback.py to the changes to be committed
 
-		git commit -m “Upload completed faces.py“
-Commit all changes in the REPO with the comment “Upload completed faces.py“
+		git commit -m “Upload completed playback.py“
+Commit all changes in the REPO with the comment “Upload completed playback.py“
 *note: If the file is not complete, adjust the comment to describes what is being commited*
 
 		git push 

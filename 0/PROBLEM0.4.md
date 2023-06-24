@@ -1,37 +1,13 @@
-# Tip Calculator
+# Einstein
 
-In the United States, it’s customary to leave a tip for your server after dining in a restaurant, typically an amount equal to 15% or more of your meal’s cost. Not to worry, though, we’ve written a tip calculator for you, below!
+Even if you haven’t studied physics (recently or ever!), you might have heard that E = mc<sup>2</sup>, wherein E represents energy (measured in Joules), E represents mass (measured in kilograms), and represents the speed of light (measured approximately as 300000000 meters per second), per Albert Einstein et al. Essentially, the formula means that mass and energy are equivalent.
 
-		def main():
-			dollars = dollars_to_float(input("How much was the meal? "))
-			percent = percent_to_float(input("What percentage would you like to tip? "))
-			tip = dollars * percent
-			print(f"Leave ${tip:.2f}")
-
-
-		def dollars_to_float(d):
-			# TODO
-
-
-		def percent_to_float(p):
-			# TODO
-
-
-		main()
-
-Well, we’ve written most of a tip calculator for you. Unfortunately, we didn’t have time to implement two functions:
-
-- `dollars_to_float`, which should accept a `str` as input (formatted as `$##.##`, wherein each `#` is a decimal digit), remove the leading `$`, and return the amount as a `float`. For instance, given `$50.00` as input, it should return `50.0`.
-- `percent_to_float`, which should accept a `str` as input (formatted as `##%`, wherein each `#` is a decimal digit), remove the trailing `%`, and return the percentage as a `float`. For instance, given `15%` as input, it should return `0.15`.
-
-Assume that the user will input values in the expected formats.
+In a file called `einstein.py`, implement a program in Python that prompts the user for mass as an integer (in kilograms) and then outputs the equivalent number of Joules as an integer. Assume that the user will input an integer.
 
 ## Hints
-
-- Recall that `input` returns a `str`, per <https://docs.python.org/3/library/functions.html#input>.
-- Recall that `float` can convert a `str` to a `float`, per <https://docs.python.org/3/library/functions.html#float>.
-- Recall that a `str` comes with quite a few methods, per <https://docs.python.org/3/library/stdtypes.html#string-methods>.
-Demo
+1. Recall that input returns a `str`, per <https://docs.python.org/3/library/functions.html#input>.
+2. Recall that int can convert a `str` to an `int`, per <https://docs.python.org/3/library/functions.html#int>.
+3. Recall that Python comes with several built-in functions, per <https://docs.python.org/3/library/functions.html>.
 
 ## Before You Begin
 Execute `cd` by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
@@ -39,32 +15,32 @@ Execute `cd` by itself in your terminal window. You should find that your termin
 		$
 Next execute
 
-		mkdir tip
-to make a folder called tip in your codespace.
+		mkdir einstein
+to make a folder called einstein in your codespace.
 
 Then execute
 
-		cd tip
-to change directories into that folder. You should now see your terminal prompt as tip/ $. You can now execute
+		cd einstein
+to change directories into that folder. You should now see your terminal prompt as einstein/ $. You can now execute
 
-		code tip.py
-to make a file called tip.py where you’ll write your program.
+		code einstein.py
+to make a file called einstein.py where you’ll write your program.
 
 # How to Test
-Here’s how to test your code manually. At the `tip/ $` prompt in your terminal: :
+Here’s how to test your code manually. At the `einstein/ $` prompt in your terminal: :
 
-1. Run your program with `python tip.py`. Type `$50.00` and press Enter. Then, type `15%` and press Enter. Your program should output: `Leave $7.50`  
-2. Run your program with `python tip.py`. Type `$100.00` and press Enter. Then, type `18%` and press Enter. Your program should output: `Leave $18.00`
-3. Run your program with `python tip.py`. Type `$15.00` and press Enter. Then, type `25%` and press Enter. Your program should output: `Leave $3.75`
+1. Run your program with `python einstein.py`. Type `1` and press Enter. Your program should output: `90000000000000000`
+2. Run your program with `python einstein.py`. Type `14` and press Enter. Your program should output: `1260000000000000000`
+3. Run your program with `python einstein.py`. Type `50` and press Enter. Your program should output: `4500000000000000000`
 
 # Commit your progran to GITHUB
-At the `tip/ $` prompt in your terminal:
+At the `einstein/ $` prompt in your terminal:
 
-		git add tip.py
-Add tip.py to the changes to be committed
+		git add einstein.py
+Add einstein.py to the changes to be committed
 
-		git commit -m “Upload completed tip.py“
-Commit all changes in the REPO with the comment “Upload completed tip.py“
+		git commit -m “Upload completed einstein.py“
+Commit all changes in the REPO with the comment “Upload completed einstein.py“
 *note: If the file is not complete, adjust the comment to describes what is being commited*
 
 		git push 

@@ -1,8 +1,10 @@
-# Playback Speed
+# Indoor Voice
 
-Some people have a habit of lecturing speaking rather quickly, and it’d be nice to slow them down, a la YouTube’s 0.75 playback speed, or even by having them pause between words.
+WRITING IN ALL CAPS IS LIKE YELLING.
 
-In a file called playback.py, implement a program in Python that prompts the user for input and then outputs that same input, replacing each space with ... (i.e., three periods).
+Best to use your “indoor voice” sometimes, writing entirely in lowercase.
+
+In a file called `indoor.py`, implement a program in Python that prompts the user for input and then outputs that same input in lowercase. Punctuation and whitespace should be outputted unchanged. You’re welcome, but not required, to prompt the user explicitly, as by passing a str of your own as an argument to input.
 
 ## Hints
 - Recall that input returns a str, per <https://docs.python.org/3/library/functions.html#input>.
@@ -14,32 +16,32 @@ Execute `cd` by itself in your terminal window. You should find that your termin
 		$
 Next execute
 
-		mkdir playback
-to make a folder called playback in your codespace.
+		mkdir indoor
+to make a folder called indoor in your codespace.
 
 Then execute
 
-		cd playback
-to change directories into that folder. You should now see your terminal prompt as playback/ $. You can now execute
+		cd indoor
+to change directories into that folder. You should now see your terminal prompt as indoor/ $. You can now execute
 
-		code playback.py
-to make a file called playback.py where you’ll write your program.
+		code indoor.py
+to make a file called indoor.py where you’ll write your program.
 
 # How to Test
-Here’s how to test your code manually. At the `playback/ $` prompt in your terminal: :
+Here’s how to test your code manually. At the `indoor/ $` prompt in your terminal: :
 
-1. Run your program with `python playback.py`. Type `This is CS50` and press `Enter`. Your program should output: `This...is...CS50`    
-2. Run your program with `python playback.py`. Type `This is our week on functions` and press `Enter`. Your program should output: `This...is...our...week...on...functions`
-3. Run your program with `python playback.py`. Type `Let's implement a function called hello` and press Enter. Your program should output: `Let's...implement...a...function...called...hello`.
+1. Run your program with `python indoor.py`. Type `HELLO` and press Enter. Your program should output `hello`.
+2. Run your program with `python indoor.py`. Type `THIS IS CS50` and press Enter. Your program should output `this is cs50`.
+3. Run your program with `python indoor.py`. Type `50` and press Enter. Your program should output `50`.
 
 # Commit your progran to GITHUB
-At the `playback/ $` prompt in your terminal:
+At the `indoor/ $` prompt in your terminal:
 
-		git add playback.py
-Add playback.py to the changes to be committed
+		git add indoor.py
+Add indoor.py to the changes to be committed
 
-		git commit -m “Upload completed playback.py“
-Commit all changes in the REPO with the comment “Upload completed playback.py“
+		git commit -m “Upload completed indoor.py“
+Commit all changes in the REPO with the comment “Upload completed indoor.py“
 *note: If the file is not complete, adjust the comment to describes what is being commited*
 
 		git push 

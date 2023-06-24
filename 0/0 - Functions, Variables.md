@@ -3,32 +3,32 @@
 Watch the [Functions, Variables](https://schoolsnsw.sharepoint.com/:v:/s/2025-SoftwareEngineering/EUx0KRRHe65Jj0jS1aqYiwcBNfF4TmbZdfwV92WcLE2uwQ?e=2PQ7fZ) video.
 
 ## Problems
-1. Problem 0.1 - Indoor Voice
-2. Problem 0.2 - Playback Speed
-3. Problem 0.3 - Making Faces
-4. Problem 0.4 - Einstein
-5. Problem 0.5 - Tip Calculator
+1. [Problem 0.1 - Indoor Voice](https://github.com/TempeHS/PythonFundamentals/blob/main/0/PROBLEM0.1.md)
+2. [Problem 0.2 - Playback Speed](https://github.com/TempeHS/PythonFundamentals/blob/main/0/PROBLEM0.2.md)
+3. [Problem 0.3 - Making Faces](https://github.com/TempeHS/PythonFundamentals/blob/main/0/PROBLEM0.3.md)
+4. [Problem 0.4 - Einstein](https://github.com/TempeHS/PythonFundamentals/blob/main/0/PROBLEM0.4.md)
+5. [Problem 0.5 - Tip Calculator](https://github.com/TempeHS/PythonFundamentals/blob/main/0/PROBLEM0.5.md)
 
 ## Notes
-1. Creating Code with Python
+1. [Creating Code with Python](Creating-Code-with-Python)
 2. [Functions](#Functions)
-3. Bugs
-4. Improving Your First Python Program
-5. Variables
-6. Comments
-7. Pseudocode
-8. Further Improving Your First Python Program
-9. Strings and Paremeters
-10. A small problem with quotation marks
-11. Formatting Strings
-12. More on Strings
-13. Integers or int
-14. Readability Wins
-15. Float Basics
-15. More on Floats
-16. Def
-17. Returning Values
-18 Summing Up
+3. [Bugs](Bugs)
+4. [Improving Your First Python Program](Improving-Your-First-Python-Program)
+5. [Variables](Variables)
+6. [Comments](Comments)
+7. [Pseudocode](Pseudocode)
+8. [Further Improving Your First Python Program](Further-Improving-Your-First-Python-Program)
+9. [Strings and Paremeters](Strings-and-Paremeters)
+10. [A small problem with quotation marks](A-small-problem-with-quotation-marks)
+11. [Formatting Strings](Formatting-Strings)
+12. [More on Strings](More-on-Strings)
+13. [Integers or int](Integers-or-int)
+14. [Readability Wins](Readability-Wins)
+15. [Float Basics](Float-Basics)
+15. [More on Floats](More-on-Floats)
+16. [Def](Def)
+17. [Returning Values](Returning-Values)
+18 [Summing Up](Summing-Up)
 
 ### Creating Code with Python
 VS Code is a special type of text editor that is called a compiler. At the top, you’ll notice a text editor and, at the bottom you will see a terminal where you can execute commands.

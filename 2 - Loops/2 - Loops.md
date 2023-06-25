@@ -1,6 +1,6 @@
-# Lecture 1 - Conditionals
+# Lecture 2 - Loops
 
-Watch the [Conditionals](https://schoolsnsw.sharepoint.com/:v:/s/2025-SoftwareEngineering/EUx0KRRHe65Jj0jS1aqYiwcBNfF4TmbZdfwV92WcLE2uwQ?e=GWwfJI) video.
+Watch the [Loops](https://schoolsnsw.sharepoint.com/:v:/s/2025-SoftwareEngineering/EQxxTLUVd7JMvA5L1otEMYwBvHljYT1FKTp6YNg-Gou82w?e=5tlaE8) video.
 
 ## Problems
 1. [Problem 0.1 - Deep Thought](PROBLEM0.1.md)
@@ -10,321 +10,378 @@ Watch the [Conditionals](https://schoolsnsw.sharepoint.com/:v:/s/2025-SoftwareEn
 5. [Problem 0.5 - Meal Time](PROBLEM0.1.md)
 
 ## Notes
-1. [Conditionals](Conditionals)
-2. [if Statements](if-Statements)
-3. [Control Flow, elif, and else](Control-Flow,-elif,-and-else)
-4. [or](or)
-5. [and](and)
-6. [Modulo](Modulo)
-7. [Creating Our Own Parity Function](Creating-Our-Own-Parity-Function)
-8. [Pythonic](Pythonic)
-9. [match](match])
-10. [Summing Up](Summing-Up)
+1. [Loops](Loops)
+2. [While Loops](While-Loops)
+3. [For Loops](For-Loops)
+4. [Improving with User Input](Improving-with-User-Input)
+5. [More About Lists](More-About-Lists)
+6. [Length](Length)
+7. [Dictionaries](Dictionaries)
+8. [Mario](Mario)
+9. [Summing Up](Summing-Up)
 
 ---
 
-### Conditionals
-Conditionals allow you, the programmer, to allow your program to make decisions: As if your program has the choice between taking the left-hand road or the right-hand road based upon certain conditions.
-Built within Python are a set of “operators” that can are used to ask mathematical questions.
-`>` and `<` symbols are probably quite familiar to you.
-`>=` denotes “greater than or equal to.”
-`<=` denotes “less than or equal to.”
-`==` denotes “equals, though do notice the double equal sign! A single equal sign would assign a value. Double equal signs are used to compare variables.
-`!=` denotes “not equal to.
-Conditional statements compare a left-hand term to a right-hand term.
+### Loops
+Essentially, `loops` are a way to do something over and over again.
+Begin by typing `code cat.py` in the terminal window.
+In the text editor, begin with the following code:
 
-### if Statements
-In your terminal window, type code `compare.py`. This will create a brand new file called “compare.”
-In the text editor window, begin with the following:
+		print("meow")
+		print("meow")
+		print("meow")
+Running this code by typing `python cat.py`, you’ll notice that the program meows three times.
 
-		x = int(input("What's x? "))
-		y = int(input("What's y? "))
+In developing as a programmer, you want to consider how one could improve areas of one’s code where one types the same thing over and over again. Imagine where one might want to “meow” 500 times. Would it be logical to type that same expression of `print("meow")` over and over again?
+Loops enable you to create a block of code that executes over and over again.
 
-		if x < y:
-			print("x is less than y")
-Notice how your program takes the input of the user for both x and y, casting them as integers and saving them into their respective x and y variables. Then, the `if` statement compares x and y. If the condition of `x < y` is met, the `print` statement is executed.
+### While Loops
+The while loop is nearly universal throughout all coding languages.
+Such a loop will repeat a block of code over and over again.
+In the text editor window, edit your code as follows:
 
-If statements use `bool` or boolean values (true or false) to decide whether or not to execute. If the statement of `x > y` is true, the compiler will register it as `true` and execute the code.
+		i = 3
+		while i != 0:
+			print("meow")
+Notice how even though this code will execute `print("meow")` multiple times, it will never stop! It will loop forever. `while` loops work by repeatedly asking if the condition of the loop has been fulfilled. In this case, the compiler is asking “does i not equal zero?” When you get stuck in a loop that executes forever, you can press `control-c` on your keyboard to break out of the loop.
 
-### Control Flow, elif, and else
-Further revise your code as follows:
+To fix this loop that lasts forever, we can edit our code as follows
 
-		x = int(input("What's x? "))
-		y = int(input("What's y? "))
+		i = 3
+		while i != 0:
+		  print("meow")
+		  i = i - 1
+Notice that now our code executes properly, reducing `i` by `1` for each “iteration” through the loop. This term iteration has special significance within coding. By iteration, we mean one cycle through the loop. The first iteration is the “0th” iteration through the loop. The second is the “1st” iteration. In programming we count starting with 0, then 1, then 2.
 
-		if x < y:
-			print("x is less than y")
-		if x > y:
-			print("x is greater than y")
-		if x == y:
-			print("x is equal to y")
-Notice how you are providing a series of `if` statements. First, the first `if` statement is evaluated. Then, the second `if` statement runs its evaluation. Finally, the last `if` statement runs its evaluation. This flow of decisions is called “control flow.”
+We can further improve our code as follows:
 
-Our code can be represented as follows:
+		  i = 1
+		  while i <= 3:
+			  print("meow")
+			  i = i + 1
+Notice that when we code `i = i + 1` we assign the value of `i` from the right to the left. Above, we are starting `i` at one, like most humans count (1, 2, 3). If you execute the code above, you’ll see it meows three times. It’s best practice in programming to begin counting with zero.
 
-<img src="images/flowchart1.svg" width="300" />
+We can improve our code, to start counting with zero:
 
-This program can be improved by not asking three consecutive questions. After all, not all three questions can have an outcome of true! Revise your program as follows:
+		i = 0
+		while i < 3:
+			print("meow")
+			i += 1
+Notice how changing the operator to `i < 3` allows our code to function as intended. We begin by counting with 0 and it iterates through our loop three times, producing three meows. Also, notice how `i += 1` is the same as saying `i = i + 1`.
 
-		x = int(input("What's x? "))
-		y = int(input("What's y? "))
-
-		if x < y:
-			print("x is less than y")
-		elif x > y:
-			print("x is greater than y")
-		elif x == y:
-			print("x is equal to y")
-Notice how the use of `elif` allows the program to make less decisions. First, the `if` statement is evaluated. If this statement is found to be true, all the `elif` statements not be run at all. However, if the `if` statement is evaluated and found to be false, the first `elif` will be evaluated. If this is true, it will not run the final evaluation.
-
-Our code can be represented as follows:
-
-<img src="images/flowchart2.svg" width="300" />
-
-While your computer may not notice a difference speed-wise between our first program and this revised program, consider how an online server running billions or trillions of these types of calculations each day could definitely be impacted by such a small coding decision.
-There is one final improvement we can make to our program. Notice how logically `elif x == y` is not a necessary evaluation to run. After all, if logically x is not less than y AND x is not greater than y, x MUST equal y. Therefore, we don’t have to run elif `x == y`. We can create a “catch-all,” default outcome using an `else` statement. We can revise as follows:
-
-		x = int(input("What's x? "))
-		y = int(input("What's y? "))
-
-		if x < y:
-			print("x is less than y")
-		elif x > y:
-			print("x is greater than y")
-		else:
-			print("x is equal to y")
-Notice how the relative complexity of this program has decreased through our revision.
-
-Our code can be represented as follows:
+Our code at this point is illustrated as follows:
 
 <img src="images/flowchart3.svg" width="300" />
 
-### or
-`or` allows your program to decide between one or more alternatives. For example, we could further edit our program as follows:
+Notice how our loop counts `i` up to, but not through `3`.
 
-		x = int(input("What's x? "))
-		y = int(input("What's y? "))
+### For Loops
+A `for` loop is a different type of loop.
+To best understand a `for` loop, it’s best to begin by talking about a new variable type called a `list` in Python. As in other areas of our lives, we can have a grocery list, a to-do list, etc.
+A `for` loop iterates through a `list` of items. For example, in the text editor window, modify your `cat.py` code as follows:
 
-		if x < y or x > y:
-			print("x is not equal to y")
-		else:
-			print("x is equal to y")
-Notice that the result of our program is the same, but the complexity is decreased and the efficiency of our code is increased.
+		for i in [0, 1, 2]:
+			print("meow")
+Notice how clean this code is compared to your previous `while` loop code. In this code, `i` begins with `0`, meows, `i` is assigned `1`, meows, and, finally, `i` is assigned `2`, meows, and then ends.
 
-At this point, our code is pretty great. However, could the design be further improved? We could further edit our code as follows:
+While this code accomplishes what we want, there are some possibilities for improving our code for extreme cases. At first glance, our code looks great. However, what if you wanted to iterate up to a million? It’s best to create code that can work with such extreme cases. Accordingly, we can improve our code as follows:
 
-		x = int(input("What's x? "))
-		y = int(input("What's y? "))
+		for i in range(3):
+			print("meow")
+Notice how `range(3)` provides back three values (`0`, `1`, and `2`) automatically. This code will execute and produce the intended effect, meowing three times.
 
-		if x != y:
-			print("x is not equal to y")
-		else:
-			print("x is equal to y")
-Notice how we removed the `or` entirely, and simply asked “is x not equal to y?” We ask one and only one question. Very efficient!
+Our code can be further improved. Notice how we never use `i` explicitly in our code. That is, while Python needs the `i` as a place to store the number of the iteration of the loop, we never use it for any other purpose. In Python, if such a variable does not have any other significance in our code, we can simply represent this variable as a single underscore `_`. Therefore, you can modify your code as follows:
 
-For the purpose of illustration, we could also change our code as follows:
+		for _ in range(3):
+			print("meow")
+Notice how changing the `i` to `_` has zero impact on the functioning of our program.
 
-		x = int(input("What's x? "))
-		y = int(input("What's y? "))
+Our code can be further improved. To stretch your mind to the possibilities within Python, consider the following code:
 
-		if x == y:
-			print("x is equal to y")
-		else:
-			print("x is not equal to y")
-Notice that the `==` operator evaluates if what is on the left and right are equal to one another. That use of double equal signs is very important. If you use only one equal sign, an error will likely be thrown by the compiler.
+		print("meow" * 3)
+Notice how it will meow three times, but the program will produce `meowmeowmeow` as the result. Consider: How could you create a line break at the end of each meow?
 
-Our code can be illustrated as follows:
+Indeed, you can edit your code as follows:
 
-<img src="images/flowchart4.svg" width="300" />
+		print("meow\n" * 3, end="")
+Notice how this code produces three meows, each on a separate line. By adding `end=""` and the `\n` we tell the compiler to add a line break at the end of each meow.
 
-### and
-Similar to `or`, `and` can be used within conditional statements.
-Execute in the terminal window `code grade.py`. Start your new program as follows:
+### Improving with User Input
+Perhaps we want to get input from our user. We can use loops as a way of validating the input of the user.
+A common paradigm within Python is to use a `while` loop to validate the input of the user.
+For example, let’s try prompting the user for a number greater than or equal 0:
+		while True:
+			n = int(input("What's n? "))
+			if n < 0:
+				continue
+			else:
+				break
+Notice that we’ve introduced two new keywords in Python, `continue` and `break`. `continue` explicitly tells Python to go to the next iteration of a loop. `break`, on the other hand, tells Python to “break out” of a loop early, before it has finished all of its iterations. In this case, we’ll `continue` to the next iteration of the loop when n is less than 0—ultimately reprompting the user with “What’s n?”. If though, `n` is greater than or equal to 0, we’ll `break` out of the loop and allow the rest of our program to run.
+It turns out that the `continue` keyword is redundant in this case. We can improve our code as follows:
 
-		score = int(input("Score: "))
+		while True:
+			n = int(input("What's n? "))
+			if n > 0:
+				break
 
-		if score >= 90 and score <= 100:
-			print("Grade: A")
-		elif score >=80 and score < 90:
-			print("Grade: B")
-		elif score >=70 and score < 80:
-			print("Grade: C")
-		elif score >=60 and score < 70:
-			print("Grade: D")
-		else:
-			print("Grade: F")
-Notice that executing `python grade.py` you will be able to input a score and get a grade. However, notice how there are potentials for bugs.
+		for _ in range(n):
+			print("meow")
+Notice how this while loop will always run (forever) until `n` is greater than `0`. When `n` is greater than `0`, the loop breaks.
 
-Typically, we do not want to ever trust our user to input the correct information. We could improve our code as follows:
-
-		score = int(input("Score: "))
-
-		if 90 <= score <= 100:
-			print("Grade: A")
-		elif 80 <= score < 90:
-			print("Grade: B")
-		elif 70 <= score < 80:
-			print("Grade: C")
-		elif 60 <= score < 70:
-			print("Grade: D")
-		else:
-			print("Grade: F")
-Notice how Python allows you to chain together the operators and conditions in a way quite uncommon to other programming languages.
-
-Still, we can further improve our program:
-
-		score = int(input("Score: "))
-
-		if score >= 90:
-			print("Grade: A")
-		elif score >= 80:
-			print("Grade: B")
-		elif score >= 70:
-			print("Grade: C")
-		elif score >= 60:
-			print("Grade: D")
-		else:
-			print("Grade: F")
-Notice how the program is improved by asking fewer questions. This makes our program easier to read and far more maintainable in the future.
-
-You can learn more in Python’s documentation on control flow.
-
-### Modulo
-In mathematics, parity refers to whether a number is either even or odd.
-The modulo `%` operator in programming allows one to see if two numbers divide evenly or divide and have a remainder.
-For example, 4 % 2 would result in zero, because it evenly divides. However, 3 % 2 does not divide evenly and would result in a number other than zero!
-In the terminal window, create a new program by typing `code parity.py`. In the text editor window, type your code as follows:
-
-		x = int(input("What's x? "))
-
-		if x % 2 == 0:
-			print("Even")
-		else:
-			print("Odd")
-Notice how our users can type in any number 1 or greater to see if it is even or odd.
-
-### Creating Our Own Parity Function
-As discussed in Lecture 0, you will find it useful to create a function of your own!
-We can create our own function to check whether a number is even or odd. Adjust your code as follows:
+Bringing in our prior learning, we can use functions to further to improve our code:
 
 		def main():
-			x = int(input("What's x? "))
-			if is_even(x):
-				print("Even")
-			else:
-				print("Odd")
+			number = get_number()
+			meow(number)
 
 
-		def is_even(n):
-			if n % 2 == 0:
-				return True
-			else:
-				return False
+		def get_number():
+			while True:
+				n = int(input("What's n? "))
+				if n > 0:
+					break
+			return n
+
+
+		def meow(n):
+			for _ in range(n):
+				print("meow")
+Notice how not only did we change your code to operate in multiple functions, but we also used a `return` statement to `return` the value of `n` back to the `main` function.
+
+### More About Lists
+Consider the world of Hogwarts from the famed Harry Potter universe.
+In the terminal, type `code hogwarts.py`.
+In the text editor, code as follows:
+
+		students = ["Hermoine", "Harry", "Ron"]
+
+		print(students[0])
+		print(students[1])
+		print(students[2])
+Notice how we have a `list` of students with their names as above. We then print the student who is at the 0th location, “Hermoine”. Each of the other students are printed as well.
+
+Just as we illustrated previously, we can use a loop to iterate over the list. You can improve your code as follows:
+
+		students = ["Hermoine", "Harry", "Ron"]
+
+		for student in students:
+			print(student)
+Notice that for each `student` in the `students` list, it will print the student as intended. You might wonder why we did not use the `_` designation as discussed prior. We choose not to do this because `student` is explicitly used in our code.
+
+You can learn more in Python’s documentation of [lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists).
+
+### Length
+We can utilize len as a way of checking the length of the list called students.
+Imagine that you don’t simply want to print the name of the student, but also their position in the list. To accomplish this, you can edit your code as follows:
+
+students = ["Hermoine", "Harry", "Ron"]
+
+for i in range(len(students)):
+    print(i + 1, students[i])
+Notice how executing this code results in not only getting the position of each student plus one using i + 1, but also prints the name of each student. len allow you to dynamically see how long the list of the students is regardless how much it grows.
+
+You can learn more in Python’s documentation of [len](https://docs.python.org/3/library/functions.html?highlight=len#len).
+
+### Dictionaries
+dicts or dictionaries is a data structure that allows you to associate keys with values.
+Where a list is a list of multiple values, a dict associates a key with a value.
+Considering the houses of Hogwarts, we might assign specific students to specific houses.
+
+Harry Potter Names.
+
+We could use lists alone to accomplish this:
+
+students = ["Hermoine", "Harry", "Ron", "Draco"]
+houses = ["Gryffindor", "Gryffindor", "Griffindor", "Slytherin"]
+Notice that we could promise that we will always keep these lists in order. The individual at the first position of students is associated with the house at the first position of the houses list, and so on. However, this can become quite cumbersome as our lists grow!
+
+We can better our code using a dict as follows:
+
+students = {
+    "Hermoine": "Gryffindor",
+    "Harry": "Gryffindor",
+    "Ron": "Gryffindor",
+    "Draco": "Slytherin",
+}
+print(students["Hermoine"])
+print(students["Harry"])
+print(students["Ron"])
+print(students["Draco"])
+Notice how we use {} curly braces to create a dictionary. Where lists use numbers to iterate through the list, dicts allow us to use words.
+
+Run your code and make sure your output is as follows:
+
+$ python hogwarts.py
+Gryffindor
+Gryffindor
+Gryffindor
+Slytherin
+We can improve our code as follows:
+
+students = {
+    "Hermoine": "Gryffindor",
+    "Harry": "Gryffindor",
+    "Ron": "Gryffindor",
+    "Draco": "Slytherin",
+}
+for student in students:
+    print(student)
+Notice how executing this code, the for loop will only iterate through all the keys, resulting in a list of the names of the students. How could we print out both values and keys?
+
+Modify your code as follows:
+
+students = {
+    "Hermoine": "Gryffindor",
+    "Harry": "Gryffindor",
+    "Ron": "Gryffindor",
+    "Draco": "Slytherin",
+}
+for student in students:
+    print(student, students[student])
+Notice how students[student] will go to each student’s key and find the value of the their house. Execute your code and you’ll notice how the output is a bit messy.
+
+We can clean up the print function by improving our code as follows:
+
+students = {
+    "Hermoine": "Gryffindor",
+    "Harry": "Gryffindor",
+    "Ron": "Gryffindor",
+    "Draco": "Slytherin",
+}
+for student in students:
+    print(student, students[student], sep=", ")
+Notice how this creates a clean separation of a , between each item printed.
+
+If you execute python hogwarts.py, you should see the following:
+
+$ python hogwarts.py
+Hermoine, Gryffindor
+Harry, Gryffindor
+Ron, Gryffindor
+Draco, Slytherin
+What if we have more information about our students? How could we associate more data with each of the students?
+
+Harry Potter Names.
+
+You can imagine wanting to have lots of data associated multiple things with one key. Enhance your code as follows:
+
+students = [
+    {"name": "Hermoine", "house": "Gryffindor", "patronus": "Otter"},
+    {"name": "Harry", "house": "Gryffindor", "patronus": "Stag"},
+    {"name": "Ron", "house": "Gryffindor", "patronus": "Jack Russell terrier"},
+    {"name": "Draco", "house": "Slytherin", "patronus": None},
+]
+Notice how this code creates a list of dicts. The list called students has four dicts within it: One for each student. Also, notice that Python has a special None designation where there is no value associated with a key.
+
+Now, you have access to a whole host of interesting data about these students. Now, further modify you code as follows:
+
+students = [
+    {"name": "Hermoine", "house": "Gryffindor", "patronus": "Otter"},
+    {"name": "Harry", "house": "Gryffindor", "patronus": "Stag"},
+    {"name": "Ron", "house": "Gryffindor", "patronus": "Jack Russell terrier"},
+    {"name": "Draco", "house": "Slytherin", "patronus": None},
+]
+
+for student in students:
+    print(student["name"], student["house"], student["patronus"], sep=", ")
+Notice how the for loop will iterate through each of the dicts inside the list called students.
+
+You can learn more in Python’s Documentation of dicts.
+Mario
+Remember that the classic game Mario has a hero jumping over bricks. Let’s create a textual representation of this game.
+
+Mario Block.
+
+Begin coding as follows:
+
+print("#")
+print("#")
+print("#")
+Notice how we are copying and pasting the same code over and over again.
+
+Consider how we could better the code as follows:
+
+for _ in range(3):
+    print("#")
+Notice how this accomplishes essentially what we want to create.
+
+Consider: Could we further abstract for solving more sophisticated problems later with this code? Modify your code as follows:
+
+def main():
+    print_column(3)
+
+
+def print_column(height):
+    for _ in range(height):
+        print("#")
+
+
+main()
+Notice how our column can grow as much as we want without any hard coding.
+
+Now, let’s try to print a row horizontally. Modify your code as follows:
+
+def main():
+    print_row(4)
+
+
+def print_row(width):
+    print("?" * width)
+
+
+main()
+Notice how we now have code that can create left to right blocks.
+
+Examining the slide below, notice how Mario has both rows and columns of blocks.
+
+Mario Underground.
+
+Consider, how could we implement both rows and columns within our code? Modify your code as follows:
+
+def main():
+    print_square(3)
+
+
+def print_square(size):
+
+    # For each row in square
+    for i in range(size):
+
+        # For each brick in row
+        for j in range(size):
+
+            #  Print brick
+            print("#", end="")
+
+        # Print blank line
+        print()
+
+
+main()
+Notice that we have an outer loop addresses each row in the square. Then, we have an inner loop that prints a brick in each row. Finally, we have a print statement that prints a blank line.
+
+We can further abstract away our code:
+
+		def main():
+			print_square(3)
+
+
+		def print_square(size):
+			for i in range(size):
+				print_row(size)
+
+
+		def print_row(width):
+			print("#" * width)
 
 
 		main()
-Notice that one reason our `if` statement `is_even(x)` works, even though there is no operator there. This is because our function returns a `bool` (or boolean), true or false, back to the main function. The `if` statement simply evaluates whether or not `is_even` of `x` is true or false.
-
-### Pythonic
-In the programming world, there are types of programming that are called “Pythonic” in nature. That is, there are ways to program that are sometimes only seen in Python programming. Consider the following revision to our program:
-		def main():
-			x = int(input("What's x? "))
-			if is_even(x):
-				print("Even")
-			else:
-				print("Odd")
-
-
-		def is_even(n):
-			return True if n % 2 == 0 else False
-
-
-		main()
-Notice that this return statement in our code is almost like a sentence in English. This is a unique way of coding only seen in Python.
-
-We can further revise our code and make it more and more readable:
-
-		def main():
-			x = int(input("What's x? "))
-			if is_even(x):
-				print("Even")
-			else:
-				print("Odd")
-
-
-		def is_even(n):
-			return n % 2 == 0
-
-
-		main()
-Notice that the program will evaluate what is happening within the `n % 2 == 0` as either true or false and simply return that to the main function.
-
-### match
-Similar to `if`, `elif`, and `else` statements, match statements can be used to conditionally run code that matches certain values.
-Consider the following program:
-		name = input("What's your name? ")
-
-		if name == "Harry":
-			print("Gryffindor")
-		elif name == "Hermione":
-			print("Gryffindor")
-		elif name == "Ron": 
-			print("Gryffindor")
-		elif name == "Draco":
-			print("Slytherin")
-		else:
-			print("Who?")
-Notice the first three conditional statements print the same response.
-
-We can improve this code slightly with the use of the `or` keyword:
-		name = input("What's your name? ")
-
-		if name == "Harry" or name == "Hermione" or name == "Ron": 
-			print("Gryffindor")
-		elif name == "Draco":
-			print("Slytherin")
-		else:
-			print("Who?")
-Notice the number of `elif` statements has decreased, improving the readability of our code.
-
-Alternatively, we can use `match` statements to map names to houses. Consider the following code:
-name = input("What's your name? ")
-
-		match name: 
-			case "Harry":
-				print("Gryffindor")
-			case "Hermione":
-				print("Gryffindor")
-			case "Ron": 
-				print("Gryffindor")
-			case "Draco":
-				print("Slytherin")
-			case _:
-				print("Who?")
-Notice the use of the `_` symbol in the last case. This will match with any input, resulting in similar behavior as an `else` statement.
-
-A match statement compares the value following the `match` keyword with each of the values following the `case` keywords. In the event a match is found, the respective indented code section is executed and the program stops the matching.
-We can improve the code:
-name = input("What's your name? ")
-
-		match name: 
-			case "Harry" | "Hermione" | "Ron":
-				print("Gryffindor")
-			case "Draco":
-				print("Slytherin")
-			case _:
-				print("Who?")
-Notice, the use of the single vertical bar `|`. Much like the `or` keyword, this allows us to check for multiple values in the same case statement.
-
 ### Summing Up
-You now have the power within Python to use conditional statements to ask questions and have your program take action accordingly. In this lecture, we discussed…
+You now have another power in your growing list of your Python abilities. In this lecture we addressed…
 
-Conditionals;
-`if` Statements;
-Control flow, `elif`, and `else`;
-`or`;
-`and`;
-Modulo;
-Creating your own function;
-Pythonic coding;
-and `match`.
+Loops
+`while`
+`for`
+`len`
+`list`
+`dict`

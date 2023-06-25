@@ -84,7 +84,7 @@ hello
 David
 We are getting closer to the result we might intend!
 
-You can learn more in Python’s documentation on data types.
+You can learn more in Python’s documentation on [data types](https://docs.python.org/3/library/datatypes.html).
 
 ### Comments
 Comments are a way for programmers to track what they are doing in their programs and even inform others about their intentions for a block of code. In short, they are notes for yourself and others that will see your code!
@@ -147,7 +147,7 @@ By providing end="" we are over-writing the default value of end such that it ne
 
 Parameters, therefore, are arguments that can be taken by a function.
 
-You can learn more in Python’s documentation on print.
+You can learn more in Python’s documentation on [print](https://docs.python.org/3/library/functions.html#print).
 
 ### A small problem with quotation marks
 Notice how adding quotation marks as part of your string is challenging.
@@ -211,7 +211,7 @@ We could even go further!
 
 		# Print the output
 		print(f"hello, {name}")
-You can learn more about strings in Python’s documentation on str
+You can learn more about strings in Python’s documentation on [str](https://docs.python.org/3/library/stdtypes.html#str).
 
 ### Integers or int
 In Python, an integer is referred to as an int.

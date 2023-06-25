@@ -187,7 +187,7 @@ Still, we can further improve our program:
 			print("Grade: F")
 Notice how the program is improved by asking fewer questions. This makes our program easier to read and far more maintainable in the future.
 
-You can learn more in Python’s documentation on [control flow](https://docs.python.org/3/tutorial/controlflow.html).
+You can learn more in Python’s documentation on control flow.
 
 ### Modulo
 In mathematics, parity refers to whether a number is either even or odd.

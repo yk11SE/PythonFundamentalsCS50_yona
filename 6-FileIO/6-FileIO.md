@@ -1,4 +1,4 @@
-[Home](../README.md) | [Prev Lecture](../4-Libraries/4-Libraries.md) | [Next Lecture](../8-OOP/8-OOP.md)
+[Home](../README.md) | [Prev Lecture](../4-Libraries/4-Libraries.md) | Next Lecture
 
 # Lecture 6 - File IO
 

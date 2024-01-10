@@ -1,4 +1,4 @@
-[Home](../README.md) | [Prev Lecture](../6-FileIO/6-FileIO.md) | Next Lecture
+[Home](../README.md)
 
 # Lecture 8 - Object-Oriented Programming
 

@@ -1,4 +1,4 @@
-# Python Fundamental Lectures
+# Python Fundamental Lectures - Term 1
 1. [Functions & Variables](0-FunctionsVariables/0-FunctionsVariables.md)
 2. [Conditionals](1-Conditionals/1-Conditionals.md)
 3. [Loops](2-Loops/2-Loops.md)
@@ -6,12 +6,15 @@
 5. [Exceptions](3-Exceptions/3-Exceptions.md)
 6. [Libraries](4-Libraries/4-Libraries.md)
 7. [File IO](6-FileIO/6-FileIO.md)
-8. [Object Oriented Paradigm](8-OOP/8-OOP.md)
 
-## Optional Lectures
+
+# Python Fundamental Lectures - Term 2
 1. [Unit Tests](5-UnitTests/5-UnitTests.md)
-2. [Regular Expressions](7-RegularExpressions/7-RegularExpressions.md)
-3. [Et Cetera](9-EtCetera/9-EtCetera.md)
+2. [Object Oriented Paradigm](8-OOP/8-OOP.md)
+
+# Python Fundamental Optional Lectures
+1. [Regular Expressions](7-RegularExpressions/7-RegularExpressions.md)
+2. [Et Cetera](9-EtCetera/9-EtCetera.md)
 
 # Basic 
 1. `clear` clear the terminal window

@@ -1,3 +1,29 @@
+# Python Fundamental Lectures
+1. [Functions & Variables](0-FunctionsVariables/0-FunctionsVariables.md)
+2. [Conditionals](1-Conditionals/1-Conditionals.md)
+3. [Loops](2-Loops/2-Loops.md)
+4. [Debugging](Debugging/Debugging.md)
+5. [Exceptions](3-Exceptions/3-Exceptions.md)
+6. [Libraries](4-Libraries/4-Libraries.md)
+7. [File IO](6-FileIO/6-FileIO.md)
+8. [Object Oriented Paradigm](8-OOP/8-OOP.md)
+
+## Optional Lectures
+1. [Unit Tests](5-UnitTests/5-UnitTests.md)
+2. [Regular Expressions](7-RegularExpressions/7-RegularExpressions.md)
+3. [Et Cetera](9-EtCetera/9-EtCetera.md)
+
+# Basic 
+1. `clear` clear the terminal window
+2. `ls` list files and folders in the active folder
+3. `cp [source name] [destination name]` copy a file or folder, example `cp hello.py goodbye.py` copies the file `hello.py` and saves it as `goodbye.py`
+4. `mv [target file] [new name]` rename a file or folder, example `mv hello.py hi.py` renames the file `hello.py` to `hi.py`
+5. `rm [target file]` removes (deletes) the target file, example `rm hi.py`
+6. `mkdir [name]` makes a new folder (directory), example `mkdir myFolder`
+7. `rmdir [child folder name]` removes a child folder (directory) of the active folder, example `rmdir myFolder`
+7. `cd [child folder name] changes the active folder, example `cd myFolder`
+8. `..` move to the parent folder, example `cd ..`moves the active folder to the parent folder
+
 # Basic Python Commands
 1. `code hello.py` create a python file call **hello** and begin coding into the file
 2. `python hello.py` execute the python program
@@ -22,7 +48,5 @@
 3. Start your codespace
 ![](https://raw.githubusercontent.com/TempeHS/PythonFundamentals/main/images/codespace.png "")
 ---
-4. What until you see the README.md so your CodeSpace is fully configured
+4. Wait until you see the README.md so your CodeSpace is fully configured
 ![](https://raw.githubusercontent.com/TempeHS/PythonFundamentals/main/images/codespace2.png "")
-
-https://cs50.harvard.edu/python/2022/

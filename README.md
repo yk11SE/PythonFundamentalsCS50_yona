@@ -1,4 +1,5 @@
-# Python Fundamental Lectures - Term 1
+# Python Fundamentals
+## Lectures - Term 1
 1. [Functions & Variables](0-FunctionsVariables/0-FunctionsVariables.md)
 2. [Conditionals](1-Conditionals/1-Conditionals.md)
 3. [Loops](2-Loops/2-Loops.md)
@@ -7,16 +8,18 @@
 6. [Libraries](4-Libraries/4-Libraries.md)
 7. [File IO](6-FileIO/6-FileIO.md)
 
-
-# Python Fundamental Lectures - Term 2
+## Lectures - Term 2
 1. [Unit Tests](5-UnitTests/5-UnitTests.md)
 2. [Object Oriented Paradigm](8-OOP/8-OOP.md)
 
-# Python Fundamental Optional Lectures
+## Lectures - Optional
 1. [Regular Expressions](7-RegularExpressions/7-RegularExpressions.md)
 2. [Et Cetera](9-EtCetera/9-EtCetera.md)
 
-# Basic 
+---
+
+# Commonly used commands
+## Bash Commands 
 1. `clear` clear the terminal window
 2. `ls` list files and folders in the active folder
 3. `cp [source name] [destination name]` copy a file or folder, example `cp hello.py goodbye.py` copies the file `hello.py` and saves it as `goodbye.py`
@@ -27,29 +30,38 @@
 7. `cd [child folder name] changes the active folder, example `cd myFolder`
 8. `..` move to the parent folder, example `cd ..`moves the active folder to the parent folder
 
-# Basic Python Commands
+## Python Commands
 1. `code hello.py` create a python file call **hello** and begin coding into the file
 2. `python hello.py` execute the python program
 
-# To commit and push code changes (basic GIT commands)
+## Git commands
 1. Pull latest code from the repository
+
 		git pull
 2. Add indoor.py to the changes to be committed
+
 		git add [file name]
+3. Add all chnaged files to the changes to be committed
+
+		git add -A
 3. Commit all changes in the REPO with comments
+
 		git commit -m “My comment“
 4. Push all changes to the REPO
+
 		git push 
 
-# How to setup your own CodeSpace
+# How to setup your workspace
 1. Fork this repository
-![](https://raw.githubusercontent.com/TempeHS/PythonFundamentals/main/images/fork.png "")
----
+![](images/fork.png "")
 2. Correctly name your new reposity
-![](https://raw.githubusercontent.com/TempeHS/PythonFundamentals/main/images/fork2.png "")
----
-3. Start your codespace
-![](https://raw.githubusercontent.com/TempeHS/PythonFundamentals/main/images/codespace.png "")
----
-4. Wait until you see the README.md so your CodeSpace is fully configured
-![](https://raw.githubusercontent.com/TempeHS/PythonFundamentals/main/images/codespace2.png "")
+![](images/fork2.png "")
+3. Open either a virtual or local itegrated developer environment
+- Run a virtual codespace
+![](images/codespace.png "")
+_Wait until you see the README.md so your CodeSpace is fully configured_
+- Run a local Visual Code
+![](images/codespace3.png "")
+_Make sure all extensions have loaded_
+
+

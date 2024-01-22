@@ -2,7 +2,22 @@
 
 # Lecture 3 - Exceptions
 
-Watch the [Exceptions](https://schoolsnsw.sharepoint.com/sites/2025-SoftwareEngineering/_layouts/15/stream.aspx?id=%2Fsites%2F2025%2DSoftwareEngineering%2FClass%20Materials%2FHarvard%20CS50%20Python%20Course%2Flecture3%2D1080p%2Emp4) video.
+Watch the [Exceptions](https://schoolsnsw.sharepoint.com/sites/2025-SoftwareEngineering/_layouts/15/stream.aspx?id=%2Fsites%2F2025%2DSoftwareEngineering%2FClass%20Materials%2FHarvard%20CS50%20Python%20Course%2Flecture3%2D1080p%2Emp4) video (0.44hr).
+
+## Dictionary of Terms
+1. Exception
+2. Syntax Error
+3. Unterminated
+4. Literal
+5. Runtime errors
+6. Corner case
+7. Value error
+8. Input error
+8. try & except
+9. Name error
+10. Break
+11. Return
+12. Pass
 
 ## Problems
 1. [Problem 3.1 - Fuel Gauge](PROBLEM3.1.md)

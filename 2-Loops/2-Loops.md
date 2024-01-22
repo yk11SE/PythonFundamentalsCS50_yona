@@ -4,6 +4,27 @@
 
 Watch the [Loops](https://schoolsnsw.sharepoint.com/sites/2025-SoftwareEngineering/_layouts/15/stream.aspx?id=%2Fsites%2F2025%2DSoftwareEngineering%2FClass%20Materials%2FHarvard%20CS50%20Python%20Course%2Flecture2%2D1080p%2Emp4) video (1:20hr).
 
+## Dictionary of Terms
+1. Loop
+2. Interate
+3. While loop
+4. Do While loop
+5. For loop
+6. For Each loop
+7. Interupt
+8. Decrement
+9. Increment
+10. Does not
+11. Array (called a list in Python)
+12. Length
+13. Dictionary
+14. Key
+15. value
+16. Abstraction
+
+
+
+
 ## Problems
 1. [Problem 2.1 - camelCase](PROBLEM2.1.md)
 2. [Problem 2.2 - Coke Machine](PROBLEM2.2.md)

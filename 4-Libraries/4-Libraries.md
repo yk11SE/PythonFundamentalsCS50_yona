@@ -2,7 +2,11 @@
 
 # Lecture 4 - Libraries
 
-Watch the [Libraries](https://schoolsnsw.sharepoint.com/sites/2025-SoftwareEngineering/_layouts/15/stream.aspx?id=%2Fsites%2F2025%2DSoftwareEngineering%2FClass%20Materials%2FHarvard%20CS50%20Python%20Course%2Flecture4%2D1080p%2Emp4) video.
+Watch the [Libraries](https://schoolsnsw.sharepoint.com/sites/2025-SoftwareEngineering/_layouts/15/stream.aspx?id=%2Fsites%2F2025%2DSoftwareEngineering%2FClass%20Materials%2FHarvard%20CS50%20Python%20Course%2Flecture4%2D1080p%2Emp4) video (1.27hr).
+
+## Dictionary of Terms
+1. Library
+2. Name space
 
 ## Problems
 1. [Problem 4.1 - Emojize](PROBLEM4.1.md)

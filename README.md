@@ -6,10 +6,11 @@
 4. [Debugging](Debugging/Debugging.md)
 5. [Exceptions](3-Exceptions/3-Exceptions.md)
 6. [Libraries](4-Libraries/4-Libraries.md)
-7. [File IO](6-FileIO/6-FileIO.md)
+7. [Unit Tests](5-UnitTests/5-UnitTests.md)
+8. [File IO](6-FileIO/6-FileIO.md)
 
 ## Lectures - Term 2
-1. [Unit Tests](5-UnitTests/5-UnitTests.md)
+
 2. [Object Oriented Paradigm](8-OOP/8-OOP.md)
 
 ## Lectures - Optional

@@ -1,4 +1,4 @@
-[Home](../README.md) | [Prev Lecture](../3-Exceptions/3-Exceptions.md) | [Next Lecture](../6-FileIO/6-FileIO.md)
+[Home](../README.md) | [Prev Lecture](../3-Exceptions/3-Exceptions.md) | [Next Lecture](../5-UnitTests/5-UnitTests.md)
 
 # Lecture 4 - Libraries
 
@@ -7,6 +7,9 @@ Watch the [Libraries](https://schoolsnsw.sharepoint.com/sites/2025-SoftwareEngin
 ## Dictionary of Terms
 1. Library
 2. Name space
+3. list
+4. import
+5. import from
 
 ## Problems
 1. [Problem 4.1 - Emojize](PROBLEM4.1.md)

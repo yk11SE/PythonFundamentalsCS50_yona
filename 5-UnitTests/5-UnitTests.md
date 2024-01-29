@@ -1,11 +1,13 @@
-[Home](../README.md)
+[Home](../README.md) | [Prev Lecture](../4-Libraries/4-Libraries.md) | [Next Lecture](../6-FileIO/6-FileIO.md)
 
-> [!IMPORTANT] 
-> **Optional Lecture, _complete after core lectures!_**
+# Lecture 5 - Unit Tests
 
-# Optional Lecture 5 - Unit Tests
+Watch the [Unit Tests](https://schoolsnsw.sharepoint.com/sites/2025-SoftwareEngineering/_layouts/15/stream.aspx?id=%2Fsites%2F2025%2DSoftwareEngineering%2FClass%20Materials%2FHarvard%20CS50%20Python%20Course%2Flecture5%2D1080p%2Emp4) video.
 
-Watch the _optional_ [Unit Tests](https://schoolsnsw.sharepoint.com/sites/2025-SoftwareEngineering/_layouts/15/stream.aspx?id=%2Fsites%2F2025%2DSoftwareEngineering%2FClass%20Materials%2FHarvard%20CS50%20Python%20Course%2Flecture5%2D1080p%2Emp4) video.
+## Dictionary of Terms
+1. Unit test
+2. Assert
+3. Assertion Error
 
 ## Problems
 1. [Problem 5.1 - Testing my twttr](PROBLEM5.1.md)

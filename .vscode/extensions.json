@@ -11,6 +11,7 @@
     "bierner.markdown-preview-github-styles",
     "mechatroner.rainbow-csv",
     "ms-python.pylint",
-    "bierner.markdown-mermaid"
+    "bierner.markdown-mermaid",
+    "ms-python.vscode-python-envs"
   ]
 }

@@ -2,7 +2,7 @@
 
 # Lecture 4 - Libraries
 
-Watch the [Libraries](https://schoolsnsw.sharepoint.com/:v:/r/sites/TempeHS-SoftwareEngineering-SharedResources/Shared%20Documents/Resources/Harvard%20CS50%20Python%20Course/lecture4-1080p.mp4?csf=1&web=1&e=ry6UZQ) video (1.27hr).
+Watch the [Libraries](https://schoolsnsw.sharepoint.com/:v:/r/sites/TempeHS-SoftwareEngineering-SharedResources/Shared%20Documents/Resources/Harvard%20University%20-%20CS50%20Python%20Course/lecture4-1080p.mp4?csf=1&web=1&e=ry6UZQ) video (1.27hr).
 
 ## Dictionary of Terms
 

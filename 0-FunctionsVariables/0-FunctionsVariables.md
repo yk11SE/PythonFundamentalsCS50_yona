@@ -2,7 +2,7 @@
 
 # Lecture 0 - Functions & Variables
 
-Watch the [Functions, Variables](https://schoolsnsw.sharepoint.com/:v:/r/sites/TempeHS-SoftwareEngineering-SharedResources/Shared%20Documents/Resources/Harvard%20CS50%20Python%20Course/lecture0-1080p.mp4?csf=1&web=1&e=MZKi7z) video (1:45hr).
+Watch the [Functions, Variables](https://schoolsnsw.sharepoint.com/:v:/r/sites/TempeHS-SoftwareEngineering-SharedResources/Shared%20Documents/Resources/Harvard%20University%20-%20CS50%20Python%20Course/lecture0-1080p.mp4?csf=1&web=1&e=RB6CEw) video (1:45hr).
 
 ## Dictionary of Terms
 

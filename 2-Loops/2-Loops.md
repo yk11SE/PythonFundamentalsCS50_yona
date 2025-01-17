@@ -2,7 +2,7 @@
 
 # Lecture 2 - Loops
 
-Watch the [Loops](https://schoolsnsw.sharepoint.com/:v:/r/sites/TempeHS-SoftwareEngineering-SharedResources/Shared%20Documents/Resources/Harvard%20CS50%20Python%20Course/lecture2-1080p.mp4?csf=1&web=1&e=hLGdnO) video (1:20hr).
+Watch the [Loops](https://schoolsnsw.sharepoint.com/:v:/r/sites/TempeHS-SoftwareEngineering-SharedResources/Shared%20Documents/Resources/Harvard%20University%20-%20CS50%20Python%20Course/lecture2-1080p.mp4?csf=1&web=1&e=hLGdnO) video (1:20hr).
 
 ## Dictionary of Terms
 

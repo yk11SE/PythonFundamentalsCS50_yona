@@ -2,7 +2,7 @@
 
 # Lecture 5 - Unit Tests
 
-Watch the [Unit Tests](https://schoolsnsw.sharepoint.com/:v:/r/sites/TempeHS-SoftwareEngineering-SharedResources/Shared%20Documents/Resources/Harvard%20CS50%20Python%20Course/lecture5-1080p.mp4?csf=1&web=1&e=c6PnPW) video.
+Watch the [Unit Tests](https://schoolsnsw.sharepoint.com/:v:/r/sites/TempeHS-SoftwareEngineering-SharedResources/Shared%20Documents/Resources/Harvard%20University%20-%20CS50%20Python%20Course/lecture5-1080p.mp4?csf=1&web=1&e=c6PnPW) video.
 
 ## Dictionary of Terms
 

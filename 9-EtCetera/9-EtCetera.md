@@ -1,11 +1,10 @@
 [Home](../README.md)
 
-> [!IMPORTANT]
-> **Optional Lecture, _complete after core lectures!_**
+> [!IMPORTANT] > **Optional Lecture, _complete after core lectures!_**
 
 # Optional Lecture 9 - Et Cetera
 
-Watch the _optional_ [Et Cetera](https://schoolsnsw.sharepoint.com/:v:/r/sites/TempeHS-SoftwareEngineering-SharedResources/Shared%20Documents/Resources/Harvard%20CS50%20Python%20Course/lecture9-1080p.mp4?csf=1&web=1&e=hAr93o) video.
+Watch the _optional_ [Et Cetera](https://schoolsnsw.sharepoint.com/:v:/r/sites/TempeHS-SoftwareEngineering-SharedResources/Shared%20Documents/Resources/Harvard%20University%20-%20CS50%20Python%20Course/lecture9-1080p.mp4?csf=1&web=1&e=hAr93o) video.
 
 ## Problems
 

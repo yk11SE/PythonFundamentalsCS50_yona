@@ -2,7 +2,7 @@
 
 # Short Lecture - Debugging
 
-Watch the [Debugging](https://schoolsnsw.sharepoint.com/:v:/r/sites/TempeHS-SoftwareEngineering-SharedResources/Shared%20Documents/Resources/Harvard%20CS50%20Python%20Course/debugging-1080p.mp4?csf=1&web=1&e=Wbcfg8) video.
+Watch the [Debugging](https://schoolsnsw.sharepoint.com/:v:/r/sites/TempeHS-SoftwareEngineering-SharedResources/Shared%20Documents/Resources/Harvard%20University%20-%20CS50%20Python%20Course/debugging-1080p.mp4?csf=1&web=1&e=Wbcfg8) video.
 
 ## Transcript
 

@@ -2,7 +2,7 @@
 
 # Lecture 8 - Object-Oriented Programming
 
-Watch the [Object-Oriented Programming](https://schoolsnsw.sharepoint.com/:v:/r/sites/TempeHS-SoftwareEngineering-SharedResources/Shared%20Documents/Resources/Harvard%20CS50%20Python%20Course/lecture8-1080p.mp4?csf=1&web=1&e=PRmukq) video.
+Watch the [Object-Oriented Programming](https://schoolsnsw.sharepoint.com/:v:/r/sites/TempeHS-SoftwareEngineering-SharedResources/Shared%20Documents/Resources/Harvard%20University%20-%20CS50%20Python%20Course/lecture8-1080p.mp4?csf=1&web=1&e=PRmukq) video.
 
 ## Problems
 
